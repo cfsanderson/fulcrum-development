@@ -1,0 +1,418 @@
+.security p { font-size: 1em; }
+
+/* main header section */
+
+.security .main-headline {
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(top to bottom, rgba(252, 140, 14, 0.7), rgba(251, 3, 0, 0.8), rgba(147, 6, 6, 0.8)),
+    url('/assets/img/security/security-globe-background-01.jpg')
+    center / cover
+    no-repeat;
+}
+
+.security .security-header-logo {
+  width: 33%;
+  padding-bottom: 20px;
+}
+
+.security .logo-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.security .security-cta,
+.security-cta-bottom {
+  font-size: 1.5em;
+}
+
+.security .inner-nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 85px;
+  max-width: 768px;
+  margin: auto;
+}
+
+.security .inner-nav a {
+  color: inherit;
+  font-family: "Open Sans Condensed";
+  font-size: 1.75em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.security .inner-nav span { font-size: 2em; }
+
+.security .category-heading {
+  padding: 45px 0 10px;
+  text-align: left;
+}
+
+/* About section */
+
+.security .boston {
+  width: 100%;
+  height: 200px;
+  margin-top: 25px;
+  background: url('/assets/img/security/bostonseaside.jpg') center center no-repeat;
+}
+
+.security .boston h3,
+.boston p {
+  color: #fff;
+  padding: 20px;
+}
+
+/* schedule section */
+
+.security .upper {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.security .schedule {
+  margin: auto;
+  margin-bottom: 90px;
+  max-width: 960px;
+}
+
+.security .schedule h2,
+h3,
+p {
+  color: rgb(42, 42, 42);
+}
+
+.security .schedule h2,
+.all-speakers h2,
+.about-section h2,
+.location-section h2 { font-size: 2.5em; }
+
+.security .time-day h2 {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  background: linear-gradient(to right, rgba(147, 6, 6, 0.8), rgba(251, 3, 0, 0.8), rgba(252, 140, 14, 0.7));
+}
+
+.security .time-block {
+  display: flex;
+  border-bottom: solid 1px rgb(42, 42, 42);
+}
+.security .time-block .description {
+  padding: 10px;
+}
+
+.security .time-block .description h3 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.security .time-block .description p {
+  padding: 10px;
+}
+
+.security .time-range {
+  min-width: 175px;
+  text-align: left;
+  padding: 10px;
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+  font-family: "Open Sans Condensed";
+}
+
+.security .time-day h2 { color: #fff; }
+
+.security .time-range p {
+  color: #fff;
+  font-size: 1em;
+}
+
+.security .middle {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/img/security/security-globe-background-01.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+/* Speakers section */
+
+.security .gradient-layer {
+  background: linear-gradient(to top left, rgba(252, 140, 14, 0.7), rgba(251, 3, 0, 0.8), rgba(147, 6, 6, 0.8));
+  padding-bottom: 50px;
+}
+
+.security .all-speakers {
+  margin: auto;
+  max-width: 960px;
+}
+
+.security .all-speakers h2 {
+  color: #fff;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.security .all-speakers p { color: #fff; }
+
+.security .speaker img {
+  border-radius: 50%;
+  border: solid 3px #fff;
+  height: 150px;
+  width: 150px;
+}
+
+.security .speaker {
+  display: flex;
+  padding: 15px 0;
+}
+
+.security .speaker-bio {
+  padding-left: 45px;
+}
+
+.security .speaker-bio h4 {
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+/* Location section */
+
+.security .location-gradient { background-color: rgba(250, 250, 250, 0.75); }
+
+.security .location-section h2,
+h3,
+p {
+  color: rgb(42, 42, 42);
+  text-align: left;
+}
+
+.security .about-section, .location-section {
+  margin: auto;
+  max-width: 960px;
+}
+
+.security #hotel-map {
+  height: 400px;
+  width: 100%;
+  /*background: url('/assets/img/security/map.png') center center no-repeat;*/
+}
+
+.security .location {
+  padding: 45px 0;
+}
+
+.security .location h3 {
+  padding-bottom: 25px;
+}
+
+.security .location ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.security .location li {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 25px;
+}
+
+.security .location li a {
+  padding: 25px 0 5px;
+}
+.security .register h3 { padding-bottom: 5px; }
+
+.security .cta-bottom {
+  text-align: center;
+  padding: 45px 0;
+}
+
+/* Footer */
+
+.security .landing-footer p {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.security .triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 27px solid #f00;
+  margin: 0 auto 15px;
+}
+
+/* Social */
+
+section.share {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.landing .social-share { width: 100%; }
+
+.landing .social-share li {
+  float: left;
+  width: 20%;
+}
+
+.landing .social-share li a {
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #fff !important;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  text-shadow: none;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.landing .social-share li a .fa {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.landing .social-share .tweet { background: #26c4f1; }
+.landing .social-share .fblike { background: #306199; }
+.landing .social-share .lishare { background: #007bb6; }
+.landing .social-share .plus { background: #e93f2e; }
+.landing .social-share .emailshare { background: #777; }
+
+/* end social */
+
+/* Media Queries */
+
+@media (max-width: 1030px) {
+  .security .upper { height: auto; }
+}
+
+@media (max-width: 978px) {
+  .security .logo-cta { flex-direction: column; }
+
+  .security .security-header-logo {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .security .security-cta,
+  .security-cta-bottom { width: 100%; }
+
+  .security .schedule,
+  .all-speakers,
+  .about-section,
+  .location-section {
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 756px) {
+  .security .main-headline h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .security .top-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .security .inner-nav {
+    padding: 25px 0;
+  }
+
+  .security .schedule,
+  .location-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 45px;
+  }
+
+  .about-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .security .schedule h2 { text-align: center; }
+
+  .security .all-speakers h2 { text-align: center; }
+
+  .security .about-section h2 { text-align: center; }
+
+  .security .location-section h2 { text-align: center; }
+
+  .security .all-speakers {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 20px;
+  }
+
+  .security .speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .security .speaker-bio,
+  .location,
+  .register,
+  .about-section,
+  .location ul { padding: 5px 10%; }
+
+  .security .speaker-bio h4 { text-align: center; }
+
+  .security .speaker img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .security .location h3,
+  .register h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 626px) {
+  .security .time-block {
+    flex-direction: column;
+  }
+
+  .security .time-block .description {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .security .inner-nav a { font-size: 1.2em; }
+
+  .security .security-cta,
+  .security-cta-bottom {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 330px) {
+  .security .inner-nav a { font-size: 1em; }
+}
