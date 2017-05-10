@@ -1,9 +1,10 @@
 @import 'utility';
-@import 'fulcrum-live';
+// @import 'fulcrum-live';
 @import 'security';
+@import 'social-footer';
 
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: "Lato", helvetica, arial, sans-serif;
 
 html {
   @include full-height;
@@ -12,14 +13,10 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-}
 
-.security a.btn.primary { width: 66%; }
-
-.security a.btn.primary {
-  color: #000;
-  font-size: 14px;
-  font-weight: 900;
+  h1,
+  h2,
+  h3 { font-family: "Open Sans Condensed", sans-serif; }
 }
 
 /*
@@ -33,12 +30,11 @@ Created with care by Fulcrum Mobile Solutions, LLC
 *************************************************
 */
 
+/* ----------------------------------------------------------------------------------------------------------
+Reset -------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
 
-// /* ----------------------------------------------------------------------------------------------------------
-// Reset -------------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------------- */
-//
-// /* 1  `Global reset (based upon 'reset.css' adaptations by Elliot Jay Stocks http://www.elliotjaystocks.com) */
+/* 1  `Global reset (based upon 'reset.css' adaptations by Elliot Jay Stocks http://www.elliotjaystocks.com) */
 // *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
 // table { border-collapse:collapse; border-spacing:0 }
 // fieldset, img { border:0 }
@@ -564,7 +560,7 @@ Created with care by Fulcrum Mobile Solutions, LLC
 // .aux .actions { margin-top: 25px; float:left; font-size:1em; position:relative; }
 // .aux .actions .signup { width:240px; }
 // .aux .actions .signup label { color:#999; display:block; margin-left:2px; margin-bottom:5px;  font-family: 'Lato', helvetica, arial, sans-serif; font-size:.75em; font-weight:300; text-align:left; }
-// .aux .actions .signup input { background:; border:1px solid #e5e5e5; height:26px; margin-left: 0; padding:2px 5px; width:160px; }
+// .aux .actions .signup input { border:1px solid #e5e5e5; height:26px; margin-left: 0; padding:2px 5px; width:160px; }
 // .aux .actions .signup .submit { background:#ebebeb; border:1px solid #d4d4d4; height:26px; margin-left:-5px; color:#7a7a7a; cursor:pointer; width:55px; }
 // .aux .actions .signup .submit:hover { background:#ccc; }
 // .aux .actions .signup .placeholder { color:#999; }

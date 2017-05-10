@@ -1,0 +1,43 @@
+/* Social */
+
+section.share {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.landing .social-share { width: 100%; }
+
+.landing .social-share li {
+  float: left;
+  width: 20%;
+}
+
+.landing .social-share li a {
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #fff !important;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  text-shadow: none;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.landing .social-share li a .fa {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.landing .social-share .tweet { background: #26c4f1; }
+.landing .social-share .fblike { background: #306199; }
+.landing .social-share .lishare { background: #007bb6; }
+.landing .social-share .plus { background: #e93f2e; }
+.landing .social-share .emailshare { background: #777; }
+
+/* end social */
