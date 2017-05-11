@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <script src="https://use.fontawesome.com/07a1e6c82c.js"></script>
+  <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+  <link rel="import" href="./navigator.html">
   <title>Fulcrum Development</title>
 </head>
+
 <body>
+  <!-- <div w3-include-html="navigation.html"></div> -->
+<!-- for Fulcrum site -->
   <div class="container content landing security">
     <header class="main-headline">
       <div class="page top-content">
@@ -20,50 +25,70 @@
     </header>
     <div>
       <div class="security-features">
-        <div class="it-friendly feature">
-          <div class="feature-text">
-            <h2 class="category-heading">IT-Friendly</h2>
-            <p>Fulcrum is cloud-based data collection and surveying tool. That means all data is hosted by us with none of the hassle of manual installation, configuration, and maintenance of running servers on your own hardware. Your IT staff doesn't have to shoulder more burden of managing yet another piece of software.</p>
-          </div>
-          <div class="feature-image">
-            <img src="./assets/img/security/computer-with-heart.png" alt="">
-          </div>
+        <div>
+          <section class="it-friendly">
+            <div class="feature">
+              <div class="feature-text">
+                <h2 class="category-heading">IT-Friendly</h2>
+                <p>Fulcrum is cloud-based data collection and surveying tool. That means all data is hosted by us with none of the hassle of manual installation, configuration, and maintenance of running servers on your own hardware. Your IT staff doesn't have to shoulder more burden of managing yet another piece of software.</p>
+              </div>
+              <div class="feature-image">
+                <img src="./assets/img/security/computer-with-heart.png" alt="">
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="payments feature">
-          <div class="feature-image">
-            <img src="./assets/img/security/credit-card.png" alt="">
-          </div>
-          <div class="feature-text">
-            <h2 class="category-heading">Protected Payments</h2>
-            <p>All credit card details go through a secure merchant gateway, with PCI Service Provider Level 1 certification. Your sensitive payment information always goes straight to the merchant processor, and always remains secure.</p>
-          </div>
+        <div class="background-fill">
+          <section class="payments">
+            <div class="feature">
+              <div class="feature-image">
+                <img src="./assets/img/security/credit-card.png" alt="">
+              </div>
+              <div class="feature-text">
+                <h2 class="category-heading">Protected Payments</h2>
+                <p>All credit card details go through a secure merchant gateway, with PCI Service Provider Level 1 certification. Your sensitive payment information always goes straight to the merchant processor, and always remains secure.</p>
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="backup feature">
-          <div class="feature-text">
-            <h2 class="category-heading">Automated Backup & Disaster Recovery</h2>
-            <p>Our entire cloud infrastructure is continually replicated across multiple datacenter regions. Redundant servers and automated, real-time backups mean your data is always safe in the event of localized server failures or network outages.</p>
-          </div>
-          <div class="feature-image">
-            <img src="./assets/img/security/paper-stack.png" alt="">
-          </div>
+        <div>
+          <section class="backup">
+            <div class="feature">
+              <div class="feature-text">
+                <h2 class="category-heading">Automated Backup & Disaster Recovery</h2>
+                <p>Our entire cloud infrastructure is continually replicated across multiple datacenter regions. Redundant servers and automated, real-time backups mean your data is always safe in the event of localized server failures or network outages.</p>
+              </div>
+              <div class="feature-image">
+                <img src="./assets/img/security/paper-stack.png" alt="">
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="secure feature">
-          <div class="feature-image">
-            <img src="./assets/img/security/lock.png" alt="">
-          </div>
-          <div>
-            <h2 class="category-heading">Secure at Every Step</h2>
-            <p>All network communications in Fulcrum are secured with 256-bit SSL connections to keep your data safe through every step of the process. This is the same level of security provided by online banking institutions and popular e-commerce sites. From web to mobile apps, your data is always secure in transit from device to server, or server to desktop.</p>
-          </div>
+        <div class="background-fill">
+          <section class="secure">
+            <div class="feature">
+              <div class="feature-image">
+                <img src="./assets/img/security/lock.png" alt="">
+              </div>
+              <div class="feature-text">
+                <h2 class="category-heading">Secure at Every Step</h2>
+                <p>All network communications in Fulcrum are secured with 256-bit SSL connections to keep your data safe through every step of the process. This is the same level of security provided by online banking institutions and popular e-commerce sites. From web to mobile apps, your data is always secure in transit from device to server, or server to desktop.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+    </div>
 
-      <div class="middle">
-        <h2>Security & Infastructure</h2>
+    <section class="middle">
+      <div class="security-and-infrastructure">
+        <h2>Security & Infrastructure</h2>
         <p>Fulcrum is a cloud-based data collection and storage platform designed to simplify the process of creating customized data collection apps for conducting field surveys and mobile, digital form development. As a cloud solution, the Fulcrum platform runs on the Amazon Web Services (AWS) infrastructure, including Elastic Compute Cloud (EC2), Simple Storage Service (S3), and Virtual Private Cloud (VPC). By harnessing the AWS infrastructure, Fulcrum offers higher-availability, redundant high-capacity storage, and added reliability over self-hosted software solutions.</p>
+      </div>
+      <div class="overview">
         <h2>Overview</h2>
         <ul>
           <li>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</li>
@@ -80,14 +105,14 @@
           <li>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
   <!-- Social Stuff -->
-    <div class="lower">
+    <section class="lower">
       <section class="share">
         <div class="sharing-buttons">
           <ul class="social-share">
-             <li>
+            <li>
               <a href="https://twitter.com/" class="popup tweet">
                 <i class="fa fa-twitter"></i>
               </a>
@@ -97,7 +122,7 @@
                 <i class="fa fa-facebook"></i>
               </a>
             </li>
-             <li>
+            <li>
               <a href="http://www.linkedin.com/" class="popup lishare">
                 <i class="fa fa-linkedin"></i>
               </a>
@@ -120,9 +145,14 @@
         <p>Fulcrum Mobile Solutions, LLC</p>
         <p>&copy; 2011 - 2017</p>
       </section>
-    </div>
+    </section>
+    <!-- End Socials -->
   </div>
-  <!-- {% include native-form-js.html %} -->
+
+  <script>
+    // w3.includeHTML();
+    const content = document.querySelector('link[rel="import"]').import;
+  </script>
 
 </body>
 </html>

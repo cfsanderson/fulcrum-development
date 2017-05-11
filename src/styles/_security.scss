@@ -1,6 +1,14 @@
 // background: url('../../public/assets/img/fulcrum-live/fulcrum-live-globe-background-01.jpg') center / cover no-repeat;
+// NOT for fulcrumapp.com - development CSS only
 
-.security p, ul {
+ul {
+  list-style-type: none;
+}
+
+// END development section
+
+.security p,
+ul {
   font-size: 1em;
   font-weight: 300;
 }
@@ -14,32 +22,54 @@
   justify-content: center;
 }
 
-.security .main-headline .top-content h1 {
+.security .main-headline h1 {
   text-align: center;
   color: #fff;
   font-size: 3em;
-}
-
-.security .main-headline .top-content p {
-  text-align: center;
-  color: #fff;
-  font-weight: 300;
-}
-
-.security .top-content { padding: 50px; }
-
-/* Features section */
-
-.security .security-features {
   padding: 25px;
 }
 
+.security .main-headline p {
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  padding: 25px;
+}
+
+.security .main-headline { padding: 50px; }
+
+/* security-features section */
+
+.security .security-features h2 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.security .security-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+  // padding: 50px 0;
+}
+
 .security .security-features .feature {
-  display: inline-flex;
+  display: flex;
+  padding: 50px 0;
+  // height: 300px;
+  // max-width: 960px;
+}
+
+.security .payments {
+  // max-width: 960px;
+  margin: auto;
 }
 
 .security .security-features .feature-text {
   padding: 0 15px;
+  width: 50%;
 }
 
 .security .security-features .feature-text h2 {
@@ -51,25 +81,31 @@
 }
 
 .security .security-features .feature-image {
+  width: 50%;
+  align-content: center;
   display: flex;
+  justify-content: center;
 }
 
-/* Footer */
-
-.security .landing-footer p {
-  font-size: 12px;
-  margin: 0;
-  text-align: center;
+.security .background-fill {
+  background-color: #f3f3f3;
+  width: 100%;
 }
 
-.security .triangle {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 27px solid #f00;
-  margin: 0 auto 15px;
+.security .secure { background-color: #f3f3f3; }
+
+.security .middle h2 {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.security .middle ul {
+  list-style: disc;
+  padding: 0 auto 25px;
+}
+
+.security .middle ul li {
+  padding: 10px;
 }
 
 /* Media Queries */

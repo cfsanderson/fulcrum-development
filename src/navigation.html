@@ -1,0 +1,175 @@
+<header role="banner" id="masthead">
+  <div class="page">
+    <div class="mission">
+      <div class="logo">
+        <a href="/"><img src="/assets/img/fulcrum-logo.svg" alt="Fulcrum logo" /></a>
+      </div>
+    </div>
+    <div class="nav" id="desktop">
+      <ul role="navigation" class="std">
+
+        <li class="tour"><a href="/tour/"{% if page.category == "tour" %} class="active drop"{% else %} class="drop"{% endif %}>Product Tour</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <ul>
+                  <li><a href="/tour/"{% if page.permalink == "/tour/"  %} class="active"{% else %} class=""{% endif %}>Fulcrum Overview</a></li>
+                  <li class="build"><a href="/tour/build/"{% if page.permalink == "/tour/build/"  %} class="active"{% else %} class=""{% endif %}>1. Build</a></li>
+                  <li class="deploy"><a href="/tour/deploy/"{% if page.permalink == "/tour/deploy/"  %} class="active"{% else %} class=""{% endif %}>2. Deploy</a></li>
+                  <li class="collect"><a href="/tour/collect/"{% if page.permalink == "/tour/collect/"  %} class="active"{% else %} class=""{% endif %}>3. Collect</a></li>
+                  <li class="report"><a href="/tour/report/"{% if page.permalink == "/tour/analyze/"  %} class="active"{% else %} class=""{% endif %}>4. Report</a></li>
+                  <li class="extend"><a href="/tour/extend/"{% if page.permalink == "/tour/extend/"  %} class="active"{% else %} class=""{% endif %}>5. Extend</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container -->
+        </li><!-- End 4 columns Item -->
+
+        <li class="nav-ecosystem"><a {% if page.category == "uses" or page.category == "cases" or page.category == "industries" %} class="active drop"{% else %} class="drop"{% endif %}>Using Fulcrum</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <div class="nav-cat"><a href="/industries/">Industries</a></div>
+                <ul>
+                  <li><a href="/industries/construction/"{% if page.permalink == "/industries/construction/"  %} class="active"{% else %} class=""{% endif %}>Construction</a></li>
+                  <!--<li><a href="/industries/education/"{% if page.permalink == "/industries/education/"  %} class="active"{% else %} class=""{% endif %}>Education</a></li>-->
+                  <li><a href="/industries/energy/"{% if page.permalink == "/industries/energy/"  %} class="active"{% else %} class=""{% endif %}>Energy &amp; Utilities</a></li>
+                  <li><a href="/industries/architecture-engineering-design/"{% if page.permalink == "/industries/architecture-engineering-design/"  %} class="active"{% else %} class=""{% endif %}>Engineering</a></li>
+                  <li><a href="/industries/environmental/" {% if page.permalink == "/industries/environmental/"  %} class="active"{% else %} class=""{% endif %}>Environmental</a></li>
+                  <!--<li><a href="/industries/humanitarian/"{% if page.permalink == "/industries/humanitarian/"  %} class="active"{% else %} class=""{% endif %}>Humanitarian</a></li>-->
+                  <!--<li><a href="/industries/non-profits/">Non-Profits &amp; NGOs</a></li>-->
+                  <li><a href="/industries/oil-and-gas/"{% if page.permalink == "/industries/oil-and-gas/"  %} class="active"{% else %} class=""{% endif %}>Oil &amp; Gas</a></li>
+                  <li><a href="/industries/transportation/"{% if page.permalink == "/industries/transportation/"  %} class="active"{% else %} class=""{% endif %}>Transportation</a></li>
+                  <li><a href="/industries/water/"{% if page.permalink == "/industries/water/"  %} class="active"{% else %} class=""{% endif %}>Water</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat"><a href="/uses/">Use Cases</a></div>
+                <ul>
+                  <li><a href="/uses/inventory/"{% if page.permalink == "/uses/inventory/"  %} class="active"{% else %} class=""{% endif %}>Inventory</a></li>
+                  <li><a href="/uses/asset-mgmt/"{% if page.permalink == "/uses/asset-mgmt/"  %} class="active"{% else %} class=""{% endif %}>Managing Assets</a></li>
+                  <li><a href="/uses/field-data/"{% if page.permalink == "/uses/field-data/"  %} class="active"{% else %} class=""{% endif %}>Field Data Collection</a></li>
+                  <li><a href="/uses/checklists/" {% if page.permalink == "/uses/checklists/"  %} class="active"{% else %} class=""{% endif %}>Checklists</a></li>
+                  <li><a href="/uses/mobile-forms/"{% if page.permalink == "/uses/mobile-forms/"  %} class="active"{% else %} class=""{% endif %}>Mobile Forms</a></li>
+                  <li><a href="/uses/inspections/"{% if page.permalink == "/uses/inspections/"  %} class="active"{% else %} class=""{% endif %}>Inspections</a></li>
+                  <li><a href="/uses/field-service/"{% if page.permalink == "/uses/field-service/"  %} class="active"{% else %} class=""{% endif %}>Field Service</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat"><a href="/cases/">Customer Stories</a></div>
+                  <ul>
+                    <li><a href="/cases/smec/"{% if page.permalink == "/cases/smec/"  %} class="active"{% else %} class=""{% endif %}>Asset Inventory</a></li>
+                    <li><a href="/cases/century-engineering/"{% if page.permalink == "/cases/century-engineering/"  %} class="active"{% else %} class=""{% endif %}>Asset Management</a></li>
+                    <li><a href="/cases/village-earth/"{% if page.permalink == "/cases/village-earth/"  %} class="active"{% else %} class=""{% endif %}>Census Data</a></li>
+                    <li><a href="/cases/trimat-testing/"{% if page.permalink == "/cases/trimat-testing/"  %} class="active"{% else %} class=""{% endif %}>Civil Engineering</a></li>
+                    <li><a href="/cases/brown-and-caldwell/" {% if page.permalink == "/cases/brown-and-caldwell/"  %} class="active"{% else %} class=""{% endif %}>Environmental Engineering</a></li>
+                    <li><a href="/cases/greencollar/"{% if page.permalink == "/cases/greencollar/"  %} class="active"{% else %} class=""{% endif %}>Environmental Protection</a></li>
+                    <li><a href="/cases/green-mountain-college/"{% if page.permalink == "/cases/green-mountain-college/"  %} class="active"{% else %} class=""{% endif %}>Geologic Mapping</a></li>
+                    <li><a href="/cases/halo-trust/"{% if page.permalink == "/cases/halo-trust/"  %} class="active"{% else %} class=""{% endif %}>Humanitarian Aid</a></li>
+                    <li><a href="/cases/northpower/"{% if page.permalink == "/cases/northpower/"  %} class="active"{% else %} class=""{% endif %}>Infrastructure</a></li>
+                  </ul>
+                <div class="col_1">
+                  <ul>
+                    <li><a href="/cases/desert-channels-queensland/"{% if page.permalink == "/cases/desert-channels-queensland/"  %} class="active"{% else %} class=""{% endif %}>Natural Resources</a></li>
+                    <li><a href="/cases/premier/"{% if page.permalink == "/cases/premier/"  %} class="active"{% else %} class=""{% endif %}>Oil, Gas, &amp; Energy</a></li>
+                    <li><a href="/cases/dark-sky/"{% if page.permalink == "/cases/dark-sky/"  %} class="active"{% else %} class=""{% endif %}>Pollution Monitoring</a></li>
+                    <li><a href="/cases/degenkolb-engineers/" {% if page.permalink == "/cases/degenkolb-engineers/"  %} class="active"{% else %} class=""{% endif %}>Seismic Analysis</a></li>
+                    <li><a href="/cases/victrack/"{% if page.permalink == "/cases/victrack/"  %} class="active"{% else %} class=""{% endif %}>Telecommunications</a></li>
+                    <li><a href="/cases/tilson/"{% if page.permalink == "/cases/tilson/"  %} class="active"{% else %} class=""{% endif %}>Telecom Engineering</a></li>
+                    <li><a href="/cases/ram-utilities/"{% if page.permalink == "/cases/ram-utilities/"  %} class="active"{% else %} class=""{% endif %}>Utility Monitoring</a></li>
+                    <li><a href="/cases/nestbuilders-international/"{% if page.permalink == "/cases/nestbuilders-international/"  %} class="active"{% else %} class=""{% endif %}>Water Monitoring</a></li>
+                    <li><a href="/cases/rodriguez-consulting/"{% if page.permalink == "/cases/rodriguez-consulting/"  %} class="active"{% else %} class=""{% endif %}>Water Resources</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End 4 columns container. -->
+        </li><!-- End 4 columns Item -->
+
+
+        <li class="nav-gallery"><a href="/apps/" {% if page.category == "app"  %} class="active drop"{% elsif page.category != "app" %} class="drop"{% endif %}>Apps</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <ul>
+                  <li><a href="/apps/categories/agriculture/"{% if page.permalink == "/apps/categories/agriculture/"  %} class="active"{% else %} class=""{% endif %}>Agriculture Apps</a></li>
+                  <li><a href="/apps/categories/commercial/"{% if page.permalink == "/apps/categories/commercial/"  %} class="active"{% else %} class=""{% endif %}>Commercial Apps</a></li>
+                  <li><a href="/apps/categories/construction/"{% if page.permalink == "/apps/categories/construction/"  %} class="active"{% else %} class=""{% endif %}>Construction Apps</a></li>
+                  <li><a href="/apps/categories/cultural/"{% if page.permalink == "/apps/categories/cultural/"  %} class="active"{% else %} class=""{% endif %}>Cultural Apps</a></li>
+                  <li><a href="/apps/categories/disaster-response/"{% if page.permalink == "/apps/categories/disaster-response/"  %} class="active"{% else %} class=""{% endif %}>Disaster Response Apps</a></li>
+                  <li><a href="/apps/categories/engineering/"{% if page.permalink == "/apps/categories/engineering/"  %} class="active"{% else %} class=""{% endif %}>Engineering Apps</a></li>
+                  <li><a href="/apps/categories/environmental/"{% if page.permalink == "/apps/categories/environmental/"  %} class="active"{% else %} class=""{% endif %}>Environmental Apps</a></li>
+                  <li><a href="/apps/categories/finance/"{% if page.permalink == "/apps/categories/finance/"  %} class="active"{% else %} class=""{% endif %}>Finance Apps</a></li>
+                  <li><a href="/apps/categories/government/"{% if page.permalink == "/apps/categories/government/"  %} class="active"{% else %} class=""{% endif %}>Government Apps</a></li>
+                  <li><a href="/apps/categories/health/"{% if page.permalink == "/apps/categories/health/"  %} class="active"{% else %} class=""{% endif %}>Health Apps</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul>
+                  <li><a href="/apps/categories/hospitality/"{% if page.permalink == "/apps/categories/hospitality/"  %} class="active"{% else %} class=""{% endif %}>Hospitality Apps</a></li>
+                  <li><a href="/apps/categories/miscellaneous/"{% if page.permalink == "/apps/categories/miscellaneous/"  %} class="active"{% else %} class=""{% endif %}>Miscellaneous Apps</a></li>
+                  <li><a href="/apps/categories/natural-resources/"{% if page.permalink == "/apps/categories/natural-resources/"  %} class="active"{% else %} class=""{% endif %}>Natural Resources Apps</a></li>
+                  <li><a href="/apps/categories/political/"{% if page.permalink == "/apps/categories/political/"  %} class="active"{% else %} class=""{% endif %}>Political Apps</a></li>
+                  <li><a href="/apps/categories/real-estate/"{% if page.permalink == "/apps/categories/real-estate/"  %} class="active"{% else %} class=""{% endif %}>Real Estate Apps</a></li>
+                  <li><a href="/apps/categories/safety/"{% if page.permalink == "/apps/categories/safety/"  %} class="active"{% else %} class=""{% endif %}>Safety Apps</a></li>
+                  <li><a href="/apps/categories/tourism/"{% if page.permalink == "/apps/categories/tourism/"  %} class="active"{% else %} class=""{% endif %}>Tourism Apps</a></li>
+                  <li><a href="/apps/categories/transportation/"{% if page.permalink == "/apps/categories/transportation/"  %} class="active"{% else %} class=""{% endif %}>Transportation Apps</a></li>
+                  <li><a href="/apps/categories/utilities/"{% if page.permalink == "/apps/categories/utilities/"  %} class="active"{% else %} class=""{% endif %}>Utilities Apps</a></li>
+                  <li><a href="/apps/categories/water/"{% if page.permalink == "/apps/categories/water/"  %} class="active"{% else %} class=""{% endif %}>Water Apps</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container -->
+        </li><!-- End 4 columns Item -->
+
+
+        <li><a href="/blog/" {% if page.category == "blog"  %} class="active"{% endif %}>Blog</a></li>
+
+        <li class="nav-gallery"><a href="http://help.fulcrumapp.com"{% if page.category == "help" or page.category == "services" %} class="active drop"{% else %} class="drop"{% endif %} target="_blank">Help</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <div class="nav-cat">Resources</div>
+                <ul>
+                  <li><a href="http://help.fulcrumapp.com"{% if page.permalink == "http://help.fulcrumapp.com"  %} class="active"{% else %} class=""{% endif %} target="_blank">Help Docs</a></li>
+                  <li><a href="http://developer.fulcrumapp.com/" target="_blank">Developers</a></li>
+                  <li><a href="/releases/"{% if page.permalink == "/releases/"  %} class="active"{% else %} class=""{% endif %}>Releases</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat">Services</div>
+                <ul>
+                  <!-- <li><a href="/services/custom-reports/"{% if page.permalink == "/services/custom-reports/"  %} class="active"{% else %} class=""{% endif %}>Custom Reports</a></li> -->
+                  <li><a href="/integration-services/"{% if page.permalink == "/integration-services/"  %} class="active"{% else %} class=""{% endif %}>Integration Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container. -->
+        </li><!-- End 4 columns Item -->
+
+
+
+        <li class="plans-and-pricing"><a href="/plans/" {% if page.category == "plans" %} class="active"{% endif %}>Pricing</a></li>
+      </ul>
+      <ul class="registration" style="display:none">
+        <li id="sign-in"><a href="https://web.fulcrumapp.com/users/sign_in">Log In</a></li>
+        <li><a id="nav-cta" href="https://web.fulcrumapp.com/users/sign_up/">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="nav" id="mobile">
+  <ul role="navigation" id="nav">
+    <li><a href="/tour/" {% if page.category == "tour" %} class="active"{% endif %}>product tour</a></li>
+    <li><a href="/cases/" {% if page.category == "cases" %} class="active"{% endif %}>customer stories</a></li>
+    <li><a href="/industries/" {% if page.category == "industries" %} class="active"{% endif %}>industries</a></li>
+    <li><a href="/uses/" {% if page.category == "uses" %} class="active"{% endif %}>use cases</a></li>
+    <li><a href="/apps/" {% if page.category == "app" %} class="active"{% endif %}>apps</a></li>
+    <li><a href="/blog/" {% if page.category == "blog"  %} class="active"{% endif %}>blog</a></li>
+    <li><a href="http://help.fulcrumapp.com/" {% if page.url contains "/manual" or page.url contains "/mobile" or page.url contains "/tutorials" or page.url contains "/guides" %} class="active"{% endif %}>help</a></li>
+    <li class="plans-and-pricing"><a href="/plans/" {% if page.category == "plans" %} class="active"{% endif %}>plans &amp; pricing</a></li>
+    <li><a href="https://web.fulcrumapp.com/users/sign_in">log in</a></li>
+    <li class="signup"><a id="mobile-nav-cta" href="https://web.fulcrumapp.com/users/sign_up">sign up</a></li>
+  </ul>
+</div>
