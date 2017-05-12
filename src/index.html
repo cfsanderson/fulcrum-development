@@ -4,16 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <script src="https://use.fontawesome.com/07a1e6c82c.js"></script>
-  <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
-  <link rel="import" href="./navigator.html">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
   <title>Fulcrum Development</title>
 </head>
 
 <body>
-  <!-- <div w3-include-html="navigation.html"></div> -->
-
 <!-- Begin Navbar -->
 <header role="banner" id="masthead">
   <div class="page">
@@ -290,7 +286,7 @@
     </section>
 
 <!-- END page for Fulcrum site -->
-<!-- BEGIN aux.html -->
+<!-- BEGIN aux.html (standard footer)-->
     <div class="aux">
       <div class="page">
         <div class="left">
@@ -413,3 +409,15 @@
   </div>
 </body>
 </html>
+
+
+<!--
+Notes for @cfsanderson:
+
+The Security & Infrastructure + Overview look a bit lost at the bottom.
+There's also a lot of content and having it all stacked like this is pretty overbearing.
+See if you can find another way to present these 2 sections that are a bit more typographically compelling.
+Maybe look at some of the other sites for examples of longer-form content and see how they handle it (Mapbox, 1Password, Slack, Carto, etc).
+
+The footer in this page should be our normal full footer, so just pull those includes from one of the other pages that has it, and remove the footer that's there now.
+-->
