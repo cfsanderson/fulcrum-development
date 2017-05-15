@@ -36,7 +36,7 @@ ul {
   padding: 15px 0;
 }
 
-.security .main-headline { padding: 50px; }
+.security .main-headline .top-content { padding: 25px 0; }
 
 /* security-features section */
 
@@ -46,24 +46,20 @@ ul {
 }
 
 .security .security-features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 50px;
-  // padding: 50px 0;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
 }
 
 .security .security-features .feature {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 0;
-  // height: 300px;
-  // max-width: 960px;
 }
 
 .security .payments {
-  // max-width: 960px;
   margin: auto;
 }
 
@@ -78,6 +74,7 @@ ul {
 
 .security .security-features .feature img {
   max-height: 200px;
+  max-width: 200px;
 }
 
 .security .security-features .feature-image {
@@ -93,6 +90,15 @@ ul {
 }
 
 .security .secure { background-color: #f3f3f3; }
+
+.security .security-and-infrastructure {
+  padding: 50px 0;
+  background: linear-gradient(rgba(24, 49, 62, 0.7), rgba(24, 49, 62, 0.7)), url('/assets/img/security/servers.jpg') center / cover no-repeat;
+}
+
+.security .security-and-infrastructure h2 { color: #fff; }
+
+.security .security-and-infrastructure p { color: #fff; }
 
 .security .middle h2 {
   text-align: left;
@@ -117,27 +123,49 @@ ul {
 // @media (max-width: 978px) {
 // }
 //
-// @media (max-width: 756px) {
-//   // .security .main-headline h1 {
-//   //   font-size: 34px;
-//   //   line-height: 34px;
-//   // }
-//
-//   // .security .top-content {
-//   //   width: 100%;
-//   //   padding: 0 20px;
-//   // }
-//   //
-//   // .security .inner-nav {
-//   //   padding: 25px 0;
-//   // }
-// }
+@media (max-width: 756px) {
+  .security .feature {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .security .it-friendly .feature {
+    flex-direction: column-reverse;
+  }
+
+  .security .backup .feature {
+    flex-direction: column-reverse;
+  }
+
+  .security .feature-image {
+    padding-bottom: 45px;
+    // width: auto;
+  }
+
+  .security .feature .feature-text {
+    width: inherit;
+    padding: 0;
+  }
+
+  .security .feature .feature-text h2 {
+    text-align: center;
+  }
+
+  .security .feature-image img {
+    max-height: auto;
+  }
+}
 //
 // @media (max-width: 626px) {
 // }
 //
-// @media (max-width: 480px) {
-// }
+@media (max-width: 480px) {
+  .security .feature-image img {
+    // width: 100%;
+    height: 100%;
+  }
+}
 //
 // @media (max-width: 330px) {
 // }
