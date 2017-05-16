@@ -272,20 +272,58 @@
       <div class="summary">
         <section class="middle">
           <h2>Summary</h2>
-          <ul>
-            <li>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</li>
-            <li>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</li>
-            <li>Fulcrum is a Ruby on Rails web application.</li>
-            <li>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</li>
-            <li>All server requests are handled by an nginx web server.</li>
-            <li>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</li>
-            <li>All user accounts in Fulcrum require strong passwords for authentication to the system.</li>
-            <li>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</li>
-            <li>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</li>
-            <li>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</li>
-            <li>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</li>
-            <li>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</li>
-          </ul>
+          <table>
+            <tbody>
+              <tr>
+                <th>Cloud-based Servers</th>
+                <td>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</td>
+              </tr>
+              <tr>
+                <th>Secure SSL</th>
+                <td>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</td>
+              </tr>
+              <tr>
+                <th>Ruby on Rails</th>
+                <td>Fulcrum is a Ruby on Rails web application.</td>
+              </tr>
+              <tr>
+                <th>Native Apps</th>
+                <td>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</td>
+              </tr>
+              <tr>
+                <th>Nginx Web Server</th>
+                <td>All server requests are handled by an nginx web server.</td>
+              </tr>
+              <tr>
+                <th>PostgreSQL with PostGIS</th>
+                <td>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</td>
+              </tr>
+              <tr>
+                <th>Authentication</th>
+                <td>All user accounts in Fulcrum require strong passwords for authentication to the system.</td>
+              </tr>
+              <tr>
+                <th>Attachments</th>
+                <td>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</td>
+              </tr>
+              <tr>
+                <th>Your Data</th>
+                <td>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</td>
+              </tr>
+              <tr>
+                <th>Redundancy</th>
+                <td>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</td>
+              </tr>
+              <tr>
+                <th>API Authentication</th>
+                <td>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</td>
+              </tr>
+              <tr>
+                <th>Authentication</th>
+                <td>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </div>
@@ -416,13 +454,17 @@
 </html>
 
 
-<!--
-Notes for @cfsanderson:
-
-The Security & Infrastructure + Overview look a bit lost at the bottom.
-There's also a lot of content and having it all stacked like this is pretty overbearing.
-See if you can find another way to present these 2 sections that are a bit more typographically compelling.
-Maybe look at some of the other sites for examples of longer-form content and see how they handle it (Mapbox, 1Password, Slack, Carto, etc).
-
-The footer in this page should be our normal full footer, so just pull those includes from one of the other pages that has it, and remove the footer that's there now.
--->
+<!-- <ul>
+  <li>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</li>
+  <li>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</li>
+  <li>Fulcrum is a Ruby on Rails web application.</li>
+  <li>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</li>
+  <li>All server requests are handled by an nginx web server.</li>
+  <li>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</li>
+  <li>All user accounts in Fulcrum require strong passwords for authentication to the system.</li>
+  <li>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</li>
+  <li>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</li>
+  <li>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</li>
+  <li>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</li>
+  <li>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</li>
+</ul> -->
