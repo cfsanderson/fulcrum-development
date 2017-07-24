@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <script src="https://use.fontawesome.com/07a1e6c82c.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+  <title>Fulcrum Development</title>
+</head>
+
+<body>
+<!-- Begin Navbar -->
+<header role="banner" id="masthead">
+  <div class="page">
+    <div class="mission">
+      <div class="logo">
+        <a href="/"><img src="/assets/img/fulcrum-logo.svg" alt="Fulcrum logo" /></a>
+      </div>
+    </div>
+    <div class="nav" id="desktop">
+      <ul role="navigation" class="std">
+
+        <li class="tour"><a href="/tour/"{% if page.category == "tour" %} class="active drop"{% else %} class="drop"{% endif %}>Product Tour</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <ul>
+                  <li><a href="/tour/"{% if page.permalink == "/tour/"  %} class="active"{% else %} class=""{% endif %}>Fulcrum Overview</a></li>
+                  <li class="build"><a href="/tour/build/"{% if page.permalink == "/tour/build/"  %} class="active"{% else %} class=""{% endif %}>1. Build</a></li>
+                  <li class="deploy"><a href="/tour/deploy/"{% if page.permalink == "/tour/deploy/"  %} class="active"{% else %} class=""{% endif %}>2. Deploy</a></li>
+                  <li class="collect"><a href="/tour/collect/"{% if page.permalink == "/tour/collect/"  %} class="active"{% else %} class=""{% endif %}>3. Collect</a></li>
+                  <li class="report"><a href="/tour/report/"{% if page.permalink == "/tour/analyze/"  %} class="active"{% else %} class=""{% endif %}>4. Report</a></li>
+                  <li class="extend"><a href="/tour/extend/"{% if page.permalink == "/tour/extend/"  %} class="active"{% else %} class=""{% endif %}>5. Extend</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container -->
+        </li><!-- End 4 columns Item -->
+
+        <li class="nav-ecosystem"><a {% if page.category == "uses" or page.category == "cases" or page.category == "industries" %} class="active drop"{% else %} class="drop"{% endif %}>Using Fulcrum</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <div class="nav-cat"><a href="/industries/">Industries</a></div>
+                <ul>
+                  <li><a href="/industries/construction/"{% if page.permalink == "/industries/construction/"  %} class="active"{% else %} class=""{% endif %}>Construction</a></li>
+                  <!--<li><a href="/industries/education/"{% if page.permalink == "/industries/education/"  %} class="active"{% else %} class=""{% endif %}>Education</a></li>-->
+                  <li><a href="/industries/energy/"{% if page.permalink == "/industries/energy/"  %} class="active"{% else %} class=""{% endif %}>Energy &amp; Utilities</a></li>
+                  <li><a href="/industries/architecture-engineering-design/"{% if page.permalink == "/industries/architecture-engineering-design/"  %} class="active"{% else %} class=""{% endif %}>Engineering</a></li>
+                  <li><a href="/industries/environmental/" {% if page.permalink == "/industries/environmental/"  %} class="active"{% else %} class=""{% endif %}>Environmental</a></li>
+                  <!--<li><a href="/industries/humanitarian/"{% if page.permalink == "/industries/humanitarian/"  %} class="active"{% else %} class=""{% endif %}>Humanitarian</a></li>-->
+                  <!--<li><a href="/industries/non-profits/">Non-Profits &amp; NGOs</a></li>-->
+                  <li><a href="/industries/oil-and-gas/"{% if page.permalink == "/industries/oil-and-gas/"  %} class="active"{% else %} class=""{% endif %}>Oil &amp; Gas</a></li>
+                  <li><a href="/industries/transportation/"{% if page.permalink == "/industries/transportation/"  %} class="active"{% else %} class=""{% endif %}>Transportation</a></li>
+                  <li><a href="/industries/water/"{% if page.permalink == "/industries/water/"  %} class="active"{% else %} class=""{% endif %}>Water</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat"><a href="/uses/">Use Cases</a></div>
+                <ul>
+                  <li><a href="/uses/inventory/"{% if page.permalink == "/uses/inventory/"  %} class="active"{% else %} class=""{% endif %}>Inventory</a></li>
+                  <li><a href="/uses/asset-mgmt/"{% if page.permalink == "/uses/asset-mgmt/"  %} class="active"{% else %} class=""{% endif %}>Managing Assets</a></li>
+                  <li><a href="/uses/field-data/"{% if page.permalink == "/uses/field-data/"  %} class="active"{% else %} class=""{% endif %}>Field Data Collection</a></li>
+                  <li><a href="/uses/checklists/" {% if page.permalink == "/uses/checklists/"  %} class="active"{% else %} class=""{% endif %}>Checklists</a></li>
+                  <li><a href="/uses/mobile-forms/"{% if page.permalink == "/uses/mobile-forms/"  %} class="active"{% else %} class=""{% endif %}>Mobile Forms</a></li>
+                  <li><a href="/uses/inspections/"{% if page.permalink == "/uses/inspections/"  %} class="active"{% else %} class=""{% endif %}>Inspections</a></li>
+                  <li><a href="/uses/field-service/"{% if page.permalink == "/uses/field-service/"  %} class="active"{% else %} class=""{% endif %}>Field Service</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat"><a href="/cases/">Customer Stories</a></div>
+                  <ul>
+                    <li><a href="/cases/smec/"{% if page.permalink == "/cases/smec/"  %} class="active"{% else %} class=""{% endif %}>Asset Inventory</a></li>
+                    <li><a href="/cases/century-engineering/"{% if page.permalink == "/cases/century-engineering/"  %} class="active"{% else %} class=""{% endif %}>Asset Management</a></li>
+                    <li><a href="/cases/village-earth/"{% if page.permalink == "/cases/village-earth/"  %} class="active"{% else %} class=""{% endif %}>Census Data</a></li>
+                    <li><a href="/cases/trimat-testing/"{% if page.permalink == "/cases/trimat-testing/"  %} class="active"{% else %} class=""{% endif %}>Civil Engineering</a></li>
+                    <li><a href="/cases/brown-and-caldwell/" {% if page.permalink == "/cases/brown-and-caldwell/"  %} class="active"{% else %} class=""{% endif %}>Environmental Engineering</a></li>
+                    <li><a href="/cases/greencollar/"{% if page.permalink == "/cases/greencollar/"  %} class="active"{% else %} class=""{% endif %}>Environmental Protection</a></li>
+                    <li><a href="/cases/green-mountain-college/"{% if page.permalink == "/cases/green-mountain-college/"  %} class="active"{% else %} class=""{% endif %}>Geologic Mapping</a></li>
+                    <li><a href="/cases/halo-trust/"{% if page.permalink == "/cases/halo-trust/"  %} class="active"{% else %} class=""{% endif %}>Humanitarian Aid</a></li>
+                    <li><a href="/cases/northpower/"{% if page.permalink == "/cases/northpower/"  %} class="active"{% else %} class=""{% endif %}>Infrastructure</a></li>
+                  </ul>
+                <div class="col_1">
+                  <ul>
+                    <li><a href="/cases/desert-channels-queensland/"{% if page.permalink == "/cases/desert-channels-queensland/"  %} class="active"{% else %} class=""{% endif %}>Natural Resources</a></li>
+                    <li><a href="/cases/premier/"{% if page.permalink == "/cases/premier/"  %} class="active"{% else %} class=""{% endif %}>Oil, Gas, &amp; Energy</a></li>
+                    <li><a href="/cases/dark-sky/"{% if page.permalink == "/cases/dark-sky/"  %} class="active"{% else %} class=""{% endif %}>Pollution Monitoring</a></li>
+                    <li><a href="/cases/degenkolb-engineers/" {% if page.permalink == "/cases/degenkolb-engineers/"  %} class="active"{% else %} class=""{% endif %}>Seismic Analysis</a></li>
+                    <li><a href="/cases/victrack/"{% if page.permalink == "/cases/victrack/"  %} class="active"{% else %} class=""{% endif %}>Telecommunications</a></li>
+                    <li><a href="/cases/tilson/"{% if page.permalink == "/cases/tilson/"  %} class="active"{% else %} class=""{% endif %}>Telecom Engineering</a></li>
+                    <li><a href="/cases/ram-utilities/"{% if page.permalink == "/cases/ram-utilities/"  %} class="active"{% else %} class=""{% endif %}>Utility Monitoring</a></li>
+                    <li><a href="/cases/nestbuilders-international/"{% if page.permalink == "/cases/nestbuilders-international/"  %} class="active"{% else %} class=""{% endif %}>Water Monitoring</a></li>
+                    <li><a href="/cases/rodriguez-consulting/"{% if page.permalink == "/cases/rodriguez-consulting/"  %} class="active"{% else %} class=""{% endif %}>Water Resources</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End 4 columns container. -->
+        </li><!-- End 4 columns Item -->
+
+
+        <li class="nav-gallery"><a href="/apps/" {% if page.category == "app"  %} class="active drop"{% elsif page.category != "app" %} class="drop"{% endif %}>Apps</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <ul>
+                  <li><a href="/apps/categories/agriculture/"{% if page.permalink == "/apps/categories/agriculture/"  %} class="active"{% else %} class=""{% endif %}>Agriculture Apps</a></li>
+                  <li><a href="/apps/categories/commercial/"{% if page.permalink == "/apps/categories/commercial/"  %} class="active"{% else %} class=""{% endif %}>Commercial Apps</a></li>
+                  <li><a href="/apps/categories/construction/"{% if page.permalink == "/apps/categories/construction/"  %} class="active"{% else %} class=""{% endif %}>Construction Apps</a></li>
+                  <li><a href="/apps/categories/cultural/"{% if page.permalink == "/apps/categories/cultural/"  %} class="active"{% else %} class=""{% endif %}>Cultural Apps</a></li>
+                  <li><a href="/apps/categories/disaster-response/"{% if page.permalink == "/apps/categories/disaster-response/"  %} class="active"{% else %} class=""{% endif %}>Disaster Response Apps</a></li>
+                  <li><a href="/apps/categories/engineering/"{% if page.permalink == "/apps/categories/engineering/"  %} class="active"{% else %} class=""{% endif %}>Engineering Apps</a></li>
+                  <li><a href="/apps/categories/environmental/"{% if page.permalink == "/apps/categories/environmental/"  %} class="active"{% else %} class=""{% endif %}>Environmental Apps</a></li>
+                  <li><a href="/apps/categories/finance/"{% if page.permalink == "/apps/categories/finance/"  %} class="active"{% else %} class=""{% endif %}>Finance Apps</a></li>
+                  <li><a href="/apps/categories/government/"{% if page.permalink == "/apps/categories/government/"  %} class="active"{% else %} class=""{% endif %}>Government Apps</a></li>
+                  <li><a href="/apps/categories/health/"{% if page.permalink == "/apps/categories/health/"  %} class="active"{% else %} class=""{% endif %}>Health Apps</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul>
+                  <li><a href="/apps/categories/hospitality/"{% if page.permalink == "/apps/categories/hospitality/"  %} class="active"{% else %} class=""{% endif %}>Hospitality Apps</a></li>
+                  <li><a href="/apps/categories/miscellaneous/"{% if page.permalink == "/apps/categories/miscellaneous/"  %} class="active"{% else %} class=""{% endif %}>Miscellaneous Apps</a></li>
+                  <li><a href="/apps/categories/natural-resources/"{% if page.permalink == "/apps/categories/natural-resources/"  %} class="active"{% else %} class=""{% endif %}>Natural Resources Apps</a></li>
+                  <li><a href="/apps/categories/political/"{% if page.permalink == "/apps/categories/political/"  %} class="active"{% else %} class=""{% endif %}>Political Apps</a></li>
+                  <li><a href="/apps/categories/real-estate/"{% if page.permalink == "/apps/categories/real-estate/"  %} class="active"{% else %} class=""{% endif %}>Real Estate Apps</a></li>
+                  <li><a href="/apps/categories/safety/"{% if page.permalink == "/apps/categories/safety/"  %} class="active"{% else %} class=""{% endif %}>Safety Apps</a></li>
+                  <li><a href="/apps/categories/tourism/"{% if page.permalink == "/apps/categories/tourism/"  %} class="active"{% else %} class=""{% endif %}>Tourism Apps</a></li>
+                  <li><a href="/apps/categories/transportation/"{% if page.permalink == "/apps/categories/transportation/"  %} class="active"{% else %} class=""{% endif %}>Transportation Apps</a></li>
+                  <li><a href="/apps/categories/utilities/"{% if page.permalink == "/apps/categories/utilities/"  %} class="active"{% else %} class=""{% endif %}>Utilities Apps</a></li>
+                  <li><a href="/apps/categories/water/"{% if page.permalink == "/apps/categories/water/"  %} class="active"{% else %} class=""{% endif %}>Water Apps</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container -->
+        </li><!-- End 4 columns Item -->
+
+
+        <li><a href="/blog/" {% if page.category == "blog"  %} class="active"{% endif %}>Blog</a></li>
+
+        <li class="nav-gallery"><a href="http://help.fulcrumapp.com"{% if page.category == "help" or page.category == "services" %} class="active drop"{% else %} class="drop"{% endif %} target="_blank">Help</a><!-- Begin 4 columns Item -->
+          <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="dd_inside">
+              <div class="col_1">
+                <div class="nav-cat">Resources</div>
+                <ul>
+                  <li><a href="http://help.fulcrumapp.com"{% if page.permalink == "http://help.fulcrumapp.com"  %} class="active"{% else %} class=""{% endif %} target="_blank">Help Docs</a></li>
+                  <li><a href="http://developer.fulcrumapp.com/" target="_blank">Developers</a></li>
+                  <li><a href="/releases/"{% if page.permalink == "/releases/"  %} class="active"{% else %} class=""{% endif %}>Releases</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <div class="nav-cat">Services</div>
+                <ul>
+                  <!-- <li><a href="/services/custom-reports/"{% if page.permalink == "/services/custom-reports/"  %} class="active"{% else %} class=""{% endif %}>Custom Reports</a></li> -->
+                  <li><a href="/integration-services/"{% if page.permalink == "/integration-services/"  %} class="active"{% else %} class=""{% endif %}>Integration Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End 4 columns container. -->
+        </li><!-- End 4 columns Item -->
+
+
+
+        <li class="plans-and-pricing"><a href="/plans/" {% if page.category == "plans" %} class="active"{% endif %}>Pricing</a></li>
+      </ul>
+      <ul class="registration" style="display:none">
+        <li id="sign-in"><a href="https://web.fulcrumapp.com/users/sign_in">Log In</a></li>
+        <li><a id="nav-cta" href="https://web.fulcrumapp.com/users/sign_up/">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="nav" id="mobile">
+  <ul role="navigation" id="nav">
+    <li><a href="/tour/" {% if page.category == "tour" %} class="active"{% endif %}>product tour</a></li>
+    <li><a href="/cases/" {% if page.category == "cases" %} class="active"{% endif %}>customer stories</a></li>
+    <li><a href="/industries/" {% if page.category == "industries" %} class="active"{% endif %}>industries</a></li>
+    <li><a href="/uses/" {% if page.category == "uses" %} class="active"{% endif %}>use cases</a></li>
+    <li><a href="/apps/" {% if page.category == "app" %} class="active"{% endif %}>apps</a></li>
+    <li><a href="/blog/" {% if page.category == "blog"  %} class="active"{% endif %}>blog</a></li>
+    <li><a href="http://help.fulcrumapp.com/" {% if page.url contains "/manual" or page.url contains "/mobile" or page.url contains "/tutorials" or page.url contains "/guides" %} class="active"{% endif %}>help</a></li>
+    <li class="plans-and-pricing"><a href="/plans/" {% if page.category == "plans" %} class="active"{% endif %}>plans &amp; pricing</a></li>
+    <li><a href="https://web.fulcrumapp.com/users/sign_in">log in</a></li>
+    <li class="signup"><a id="mobile-nav-cta" href="https://web.fulcrumapp.com/users/sign_up">sign up</a></li>
+  </ul>
+</div>
+
+<!-- End Navbar -->
+
+<!-- Begin page for Fulcrum site -->
+  <div class="container content landing security">
+    <header class="main-headline">
+      <div class="page top-content">
+        <h1>Security</h1>
+        <p>
+        The security of your data is our highest priority.
+        <br>
+        We designed Fulcrum with superior secuirty features that protect your data.
+        </p>
+      </div>
+    </header>
+    <div>
+      <div class="security-features">
+        <div>
+          <section class="it-friendly">
+            <div class="feature">
+              <div class="feature-text">
+                <h2 class="category-heading">IT-Friendly</h2>
+                <p>Fulcrum is cloud-based data collection and surveying tool. That means all data is hosted by us with none of the hassle of manual installation, configuration, and maintenance of running servers on your own hardware. Your IT staff doesn't have to shoulder more burden of managing yet another piece of software.</p>
+              </div>
+              <div class="feature-image">
+                <img src="./assets/img/security/computer-with-heart.png" alt="">
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="background-fill">
+          <section class="payments">
+            <div class="feature">
+              <div class="feature-image">
+                <img src="./assets/img/security/credit-card.png" alt="">
+              </div>
+              <div class="feature-text">
+                <h2 class="category-heading">Protected Payments</h2>
+                <p>All credit card details go through a secure merchant gateway, with PCI Service Provider Level 1 certification. Your sensitive payment information always goes straight to the merchant processor, and always remains secure.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section class="backup">
+            <div class="feature">
+              <div class="feature-text">
+                <h2 class="category-heading">Automated Backup & Disaster Recovery</h2>
+                <p>Our entire cloud infrastructure is continually replicated across multiple datacenter regions. Redundant servers and automated, real-time backups mean your data is always safe in the event of localized server failures or network outages.</p>
+              </div>
+              <div class="feature-image">
+                <img src="./assets/img/security/paper-stack.png" alt="">
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="background-fill">
+          <section class="secure">
+            <div class="feature">
+              <div class="feature-image">
+                <img src="./assets/img/security/lock.png" alt="">
+              </div>
+              <div class="feature-text">
+                <h2 class="category-heading">Secure at Every Step</h2>
+                <p>All network communications in Fulcrum are secured with 256-bit SSL connections to keep your data safe through every step of the process. This is the same level of security provided by online banking institutions and popular e-commerce sites. From web to mobile apps, your data is always secure in transit from device to server, or server to desktop.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-content">
+      <div class="security-and-infrastructure">
+        <section class="middle">
+          <h2>Security & Infrastructure</h2>
+          <p>Fulcrum is a cloud-based data collection and storage platform designed to simplify the process of creating customized data collection apps for conducting field surveys and mobile, digital form development. As a cloud solution, the Fulcrum platform runs on the Amazon Web Services (AWS) infrastructure, including Elastic Compute Cloud (EC2), Simple Storage Service (S3), and Virtual Private Cloud (VPC). By harnessing the AWS infrastructure, Fulcrum offers higher-availability, redundant high-capacity storage, and added reliability over self-hosted software solutions.</p>
+        </section>
+      </div>
+
+      <div class="summary">
+        <section class="middle">
+          <h2>Summary</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>Cloud-based Servers</th>
+                <td>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</td>
+              </tr>
+              <tr>
+                <th>Secure SSL</th>
+                <td>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</td>
+              </tr>
+              <tr>
+                <th>Ruby on Rails</th>
+                <td>Fulcrum is a Ruby on Rails web application.</td>
+              </tr>
+              <tr>
+                <th>Native Apps</th>
+                <td>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</td>
+              </tr>
+              <tr>
+                <th>Nginx Web Server</th>
+                <td>All server requests are handled by an nginx web server.</td>
+              </tr>
+              <tr>
+                <th>PostgreSQL with PostGIS</th>
+                <td>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</td>
+              </tr>
+              <tr>
+                <th>Authentication</th>
+                <td>All user accounts in Fulcrum require strong passwords for authentication to the system.</td>
+              </tr>
+              <tr>
+                <th>Attachments</th>
+                <td>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</td>
+              </tr>
+              <tr>
+                <th>Your Data</th>
+                <td>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</td>
+              </tr>
+              <tr>
+                <th>Redundancy</th>
+                <td>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</td>
+              </tr>
+              <tr>
+                <th>API Authentication</th>
+                <td>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</td>
+              </tr>
+              <tr>
+                <th>Authentication</th>
+                <td>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+<!-- END page for Fulcrum site -->
+<!-- BEGIN aux.html (standard footer)-->
+    <div class="aux">
+      <div class="page">
+        <div class="left">
+          <div class="utility">
+            <div class="footer-logo"><img src="/assets/img/fulcrum-logo.svg" alt="Fulcrum Logo" /></div>
+            <div class="social">
+              <ul>
+                <li><a class="twitter" href="http://twitter.com/fulcrumapp"><img src="/assets/img/social-twitter.svg" alt="Follow Fulcrum on Twitter" title="Follow Fulcrum on Twitter" /></a></li>
+                <li><a class="facebook" href="http://www.facebook.com/fulcrumapp"><img src="/assets/img/social-facebook.svg" alt="Follow Fulcrum on Facebook" title="Follow Fulcrum on Facebook" /></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/channel/UCp9XRb4VJpWTtFhPsyN5rWg"><img src="/assets/img/social-youtube.svg" alt="Watch Fulcrum on YouTube" title="Watch Fulcrum on YouTube" /></a></li>
+                <li><a class="google" href="https://plus.google.com/+Fulcrumapp/posts" rel="publisher"><img src="/assets/img/social-gplus.svg" alt="Follow Fulcrum on Google+" alt="Follow Fulcrum on Google+" /></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="signup">
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+            <form action="//fulcrumapp.us2.list-manage.com/subscribe/post?u=24334a23e0f672e41fc345de1&amp;id=867280c285" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Sign up for Fulcrum Updates *</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_24334a23e0f672e41fc345de1_867280c285" tabindex="-1" value=""></div>
+                <input type="submit" value="sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+            </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <ul>
+            <li class="title">Download</li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.spatialnetworks.fulcrum">Fulcrum for Android</a></li>
+            <li><a href="https://itunes.apple.com/us/app/fulcrum/id467758260">Fulcrum for iPhone/iPad</a></li>
+          </ul>
+          <ul>
+            <li class="title">At A Glance</li>
+            <li><a href="/about/">About Fulcrum</a></li>
+            <li><a href="/blog/">The Fulcrum Blog</a></li>
+            <li><a href="/careers/">Careers @ Fulcrum</a></li>
+            <li><a href="/partners/">Partners</a></li>
+            <li class="em"><a href="/assets/files/security-infrastructure.pdf">Security Brochure</a></li>
+          </ul>
+          <ul>
+            <li class="title">Explore</li>
+            <li><a href="/tour/">Take A Tour</a></li>
+            <li><a href="/plans/">Plans &amp; Pricing</a></li>
+            <li><a href="/apps/">App Gallery</a></li>
+            <li><a href="/cases/">Case Studies</a></li>
+            <li><a href="/industries/">Industries</a></li>
+          </ul>
+          <ul>
+            <li class="title">Resources</li>
+            <li><a href="http://help.fulcrumapp.com" target="_blank">Help Docs</a></li>
+            <li><a href="http://developer.fulcrumapp.com/" target="_blank">Developers</a></li>
+            <li><a href="/releases/">Releases</a></li>
+            <li><a href="/community/">Community</a></li>
+          </ul>
+        </div>
+        <div class="mobile-nav">
+          <ul class="download-apps">
+            <li><a class="download-app btn blue" href="https://play.google.com/store/apps/details?id=com.spatialnetworks.fulcrum">Get the Android App</a></li>
+            <li><a class="download-app btn blue" href="https://itunes.apple.com/us/app/fulcrum/id467758260">Get the iPhone App</a></li>
+          </ul>
+          <ul>
+            <li class="title">At A Glance</li>
+            <li><a href="/about/">About Fulcrum</a></li>
+            <li><a href="/blog/">The Fulcrum Blog</a></li>
+            <li><a href="/careers/">Careers @ Fulcrum</a></li>
+            <li><a href="/partners/">Partners</a></li>
+            <li class="em"><a href="/assets/files/security-infrastructure.pdf">Security Brochure</a></li>
+          </ul>
+          <ul>
+            <li class="title">Explore</li>
+            <li><a href="/tour/">Take A Tour</a></li>
+            <li><a href="/plans/">Plans &amp; Pricing</a></li>
+            <li><a href="/apps/">App Gallery</a></li>
+            <li><a href="/cases/">Case Studies</a></li>
+            <li><a href="/industries/">Industries</a></li>
+          </ul>
+          <ul>
+            <li class="title">Resources</li>
+            <li><a href="http://help.fulcrumapp.com" target="_blank">Help Docs</a></li>
+            <li><a href="http://developer.fulcrumapp.com/" target="_blank">Developers</a></li>
+            <li><a href="/releases/">Releases</a></li>
+            <li><a href="/community/">Community</a></li>
+          </ul>
+          <ul>
+            <li class="title">Your Account</li>
+            <li><a href="https://web.fulcrumapp.com/users/sign_up">Sign Up</a></li>
+            <li><a href="https://web.fulcrumapp.com/users/sign_in">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<!-- END aux.html -->
+<!-- BEGIN footer.html -->
+    <footer>
+      <div class="page crafted">
+        <div class="logo"><p>&copy; 2000-2017 Fulcrum Mobile Solutions, LLC.</p></div>
+
+        <div class="utility">
+          <ul class="supplemental-nav">
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-service/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-terms">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+      </div>
+    </footer>
+<!-- END Footer -->
+  </div>
+</body>
+</html>
+
+
+<!-- <ul>
+  <li>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</li>
+  <li>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</li>
+  <li>Fulcrum is a Ruby on Rails web application.</li>
+  <li>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</li>
+  <li>All server requests are handled by an nginx web server.</li>
+  <li>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</li>
+  <li>All user accounts in Fulcrum require strong passwords for authentication to the system.</li>
+  <li>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</li>
+  <li>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</li>
+  <li>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</li>
+  <li>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</li>
+  <li>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</li>
+</ul> -->
