@@ -1,4 +1,4 @@
-import './styles/screen.scss'
+import './styles/fulcrum-screen.scss'
 
 const main = () => {
   document.querySelector('h1').textContent += ''

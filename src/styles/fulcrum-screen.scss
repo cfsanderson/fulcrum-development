@@ -6,21 +6,11 @@
 @import 'app-page-redesign';
 @import 'catalog';
 
-$base-text-size: 16px;
-$base-font-family: "Lato", helvetica, arial, sans-serif;
-
-html {
-  @include full-height;
-}
-
-body {
-  margin: 0;
-  font: $base-text-size / 1 $base-font-family;
-
-  h1,
-  h2,
-  h3 { font-family: "Open Sans Condensed", sans-serif; }
-}
+/*
+copied from Fulcrum 7/27.
+Updates include...
+- prepending "../img" in urls with "../../public/assets/img"
+*/
 
 /*
 *************************************************
@@ -30,19 +20,16 @@ General Screen Styles
 
 Created with care by Fulcrum Mobile Solutions, LLC
 
-For this development version a few adjustments were made
- - image urls prepended with `../../public/assets/`
-
 *************************************************
 */
+
 
 /* ----------------------------------------------------------------------------------------------------------
 Reset -------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
 /* 1  `Global reset (based upon 'reset.css' adaptations by Elliot Jay Stocks http://www.elliotjaystocks.com) */
-*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
-  margin: 0; padding: 0; }
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
 table { border-collapse:collapse; border-spacing:0 }
 fieldset, img { border:0 }
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:400; }
@@ -208,7 +195,8 @@ h6 { font-size: 1em;     /* 16px/16px */ }
 a,
 a span,
 .aux .social img,
-a h3 {
+a h3,
+.grid-item a img {
   color:#3a98c3; text-decoration:none;
   -moz-transition:all 0.15s ease-out 0s;
   -webkit-transition:all 0.15s ease-out 0s;
@@ -314,7 +302,7 @@ header { text-align:center; }
   .content #search_results { margin-left: -215px; width: 430px; }
 }
 @media only all and (max-width: 480px) {
-  .content #search_input { width: 100%; }
+  .content #search_input { width: 280px; }
   .content #search_results { margin-left: -140px; width: 280px; }
 }
 
@@ -366,6 +354,15 @@ input { border:1px solid #e5e5e5; padding:2px 5px; width:240px; }
 .strong { font-weight: 900; }
 
 .legal h1 { text-align: left; margin-bottom: 15px; }
+
+.legal .h1-legal {
+  color: #fff;
+  font-size: 2.75em;
+  text-align: center;
+  margin: 0 0 15px;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 0;
+}
 
 .bottom-cta {
   background: #064a64;
@@ -885,6 +882,8 @@ Media Queries ------------------------------------------------------------------
   .two .well { margin-right:8px; width:432px; }
   /* ----- `One Col Well --*/
   .one .well { width:670px; }
+
+
 
   .watercolor {
     background:url(../../public/assets/img/watercolor-BG.png) top left no-repeat;
