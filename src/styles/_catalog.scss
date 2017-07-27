@@ -2,6 +2,15 @@
 .catalog .app-left .detail li { font-size: 14px; list-style: outside disc; margin-left: 20px; margin-bottom: 5px; }
 .main-headline { padding-top: 0; padding-bottom: 0; }
 
+.catalog .content .main-headline span {
+  bottom: -7px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  position: relative;
+  text-transform: uppercase;
+}
+
 /* Category BG Colors */
 .catalog .category-agriculture .main-headline { background:#8faf50; }
 .catalog .category-archaeology .main-headline { background:#9e9c77; }
@@ -20,7 +29,7 @@
 .catalog .category-tourism .main-headline { background:#d81688; }
 .catalog .category-transportation .main-headline { background:#077851; }
 .catalog .category-utilities .main-headline { background:#455a64; }
-
+.catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #515454); }
 
 .page.cta { padding: 20px; padding-left: 0; margin-bottom: 0 !important;
   /* background-color: #f9f9f9; */ /* border-left: 1px solid #e1e1e1; */ /* border-right: 1px solid #e1e1e1; */
