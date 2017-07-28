@@ -6,16 +6,19 @@ This is a bit hacky but is a relatively low cost way to create a development env
 - make sure you have [yarn](https://www.npmjs.com/package/yarn) installed
 - `git clone` this repo
 - `cd fulcrum-development`
-- run `yarn` (which installs all of the necessary dependencies)
+- `yarn`
 - open project in your editor of choice
-- run `yarn start` to start the dev server running on **localhost:3000**
-- hack away
+- `yarn start` to start the dev server running on **localhost:3000**
 
 ## Workflow:
 - copy necessary CSS files from fulcrumapp.com to similarly named file in `src/styles` directory but prepend the file name with an underscore and change to the `.scss` extension (e.g. `security.css` becomes `_security.scss`)
 - Import the file into `screen.scss` which itself has all the basic styles from the `screen.css` file of fulcrumapp.com plus a few extra goodies.
 - copy pasta the necessary HTML files or sections of files that you want to work with into index.html. There may be other `.html` files copied into source but only `index.html` is running live.
--
 
 ## TODOS:
 - [] rebuild with React ;)
+
+
+## Current Notes
+*7/28*
+- 
