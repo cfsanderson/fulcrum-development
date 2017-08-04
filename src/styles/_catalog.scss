@@ -1,15 +1,62 @@
-.catalog .app-left .detail ul { margin-bottom: 20px; }
-.catalog .app-left .detail li { font-size: 14px; list-style: outside disc; margin-left: 20px; margin-bottom: 5px; }
-.main-headline { padding-top: 0; padding-bottom: 0; }
+.catalog .main-headline {
+  overflow: hidden;
+  padding: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
 
-.catalog .content .main-headline span {
-  bottom: -7px;
+.catalog .main-headline .text-left {
+  float: left;
+  padding-top: 72px;
+  text-align: left;
+  width: 40%;
+}
+
+.catalog .main-headline .text-left span {
+  /*bottom: -7px;*/
   color: #fff;
   font-size: 16px;
   font-weight: 200;
   position: relative;
   text-transform: uppercase;
 }
+
+.catalog .main-headline h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: left;
+}
+
+.catalog .main-headline p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.75em;
+}
+
+.catalog .main-headline figure {
+  float: right;
+  margin-right: -61px;
+  width: 60%;
+}
+
+.catalog .main-headline img {
+  padding-top: 0px;
+  display: block;
+  /*max-width: 100%;*/
+}
+
+.catalog .platforms { padding-top: 10px; }
+.catalog .platforms li { font-size: 14px; margin-right: 20px; }
+.catalog .platform img { height: 22px; vertical-align: bottom; display: inline-block;}
+
+.catalog .cta-top a { white-space: nowrap; overflow: hidden; }
+.catalog .cta-top a.tour { background-color: #fff; border: 1px solid #eeeeee}
+
+/*=================  Original catalog styles below  =====================*/
+.catalog .app-left .detail ul { margin-bottom: 20px; }
+.catalog .app-left .detail li { font-size: 14px; list-style: outside disc; margin-left: 20px; margin-bottom: 5px; }
+.main-headline { padding-top: 0; padding-bottom: 0; }
 
 /* Category BG Colors */
 .catalog .category-agriculture .main-headline { background:#8faf50; }
@@ -30,6 +77,7 @@
 .catalog .category-transportation .main-headline { background:#077851; }
 .catalog .category-utilities .main-headline { background:#455a64; }
 .catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #515454); }
+
 
 .page.cta { padding: 20px; padding-left: 0; margin-bottom: 0 !important;
   /* background-color: #f9f9f9; */ /* border-left: 1px solid #e1e1e1; */ /* border-right: 1px solid #e1e1e1; */
@@ -59,27 +107,12 @@
   margin-bottom: 10px;
 }
 
-.app-left ul.platforms li.platform {
-  display: inline;
-  color: #444 !important;
-  font-size: 13px;
-  font-weight: normal;
-  margin-right: 20px;
-  vertical-align: middle;
-}
-
-.app-left ul.platforms img {
-  height: 24px;
-  margin-right: 3px;
-  position: relative;
-  top: 5px;
-}
-
 .app-left .detail { padding: 20px 0; /* margin-left: 112px; */ }
 .app-left .detail p { text-align: left; }
 .app-left ul.tags { text-align: left; margin-left: 4px; margin-bottom: 20px; font-size: 12pt; margin-top: -10px; }
 .app-left ul.tags li { font-weight: 900; display: inline; padding: 0; margin: 0; color: black !important; }
 .app-left ul.tags li a.tag-link { display: inline; padding: 0; margin: 0; }
+
 .app-right {
   float: right;
   text-align: left;
@@ -155,16 +188,24 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
   /* left: -90px; */
   display: inline-block;
 }
-.platforms li { font-size: 14px; }
-.platforms img { height:22px; vertical-align: bottom; }
 
 
 @media (min-width: 320px) {
-  .catalog .main-headline { background:#929189; padding-top:20px; padding-bottom:35px; }
-  .catalog .main-headline h1 { color:#fff; font-size:2.75em; }
-  .catalog .main-headline p { color:#fff; font-size: 14px; margin:0; padding:4px 20px; }
+  .catalog .main-headline { background:#929189; }
+  .catalog .main-headline h1 { color: #fff; }
+  .catalog .main-headline p {
+    color:#fff;
+    font-size: 14px;
+    margin: 0;
+    /*padding: 4px 20px;*/
+  }
 
-  .platforms { margin:0 auto; text-align: center; width: auto; }
+  .platforms {
+    margin: 0 auto;
+    /*text-align: center;*/
+    width: auto;
+  }
+
   #gallery .platforms li { color:#fff; display: inline-block; margin:10px auto; }
 
   .catalog .page { padding: 0; width:320px; }
@@ -176,7 +217,7 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
 }
 
 @media (min-width: 480px) {
-  #gallery .platforms li { margin: 0 10px; }
+  #gallery .platforms li { margin-right: 20px; }
 
   .catalog .page { padding: 0 20px; width:440px; }
   .app-video iframe { height:236px; width:420px; }
@@ -184,7 +225,6 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
   .app-right { margin-top:40px; width: 370px; }
   .app-right .app-example { background:url(/assets/img/apps/app-detail-fields-bg.png) top center no-repeat; height:667px; margin-left: -40px; width:362px; position:relative; }
   .app-right .app-fields { position: absolute; top:77px; left:22px; height:480px; width:318px; }
-
 }
 
 @media (min-width: 756px) {
