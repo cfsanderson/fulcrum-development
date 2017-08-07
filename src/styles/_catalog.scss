@@ -2,17 +2,21 @@
   overflow: hidden;
   padding: 0;
   border-bottom: 1px solid #f2f2f2;
+  height: 500px;
+}
+
+.catalog .main-headline .page {
+  position: relative;
 }
 
 .catalog .main-headline .text-left {
   float: left;
   padding-top: 72px;
   text-align: left;
-  width: 40%;
+  width: 50%;
 }
 
 .catalog .main-headline .text-left span {
-  /*bottom: -7px;*/
   color: #fff;
   font-size: 16px;
   font-weight: 200;
@@ -34,17 +38,119 @@
   line-height: 1.75em;
 }
 
-.catalog .main-headline figure {
+.catalog .main-headline figure img {
   float: right;
+  width: 680px;
   margin-right: -61px;
-  width: 60%;
+  position: absolute;
+  top: -80px;
+  right: -129px;
 }
 
 .catalog .main-headline img {
   padding-top: 0;
   display: block;
+}
 
-  /*max-width: 100%;*/
+.catalog .main-headline .sharing-container { position: relative; }
+.catalog .main-headline .sharing-buttons {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 475px;
+  right: 346px;
+}
+
+.catalog .main-headline .sharing-buttons ul {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.catalog .main-headline .sharing-buttons li {
+  display: list-item;
+  float: left;
+  width: 20%;
+  padding: 3px 0;
+  margin-bottom: 10px;
+  line-height: 1.35em;
+}
+
+.catalog .main-headline .sharing-buttons li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid #ccc;
+  text-shadow: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.catalog .main-headline .sharing-buttons i {
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  margin: 2px 0;
+  padding: 0;
+}
+
+.catalog .main-headline .social-share .tweet { background: #26c4f1; }
+.catalog .main-headline .social-share .fblike { background: #306199; }
+.catalog .main-headline .social-share .lishare { background: #007bb6; }
+.catalog .main-headline .social-share .plus { background: #e93f2e; }
+.catalog .main-headline .social-share .emailshare { background: #777; }
+
+.catalog .industries-logos {
+  background: #f1f1f1;
+  padding: 0 10px;
+  height: 84px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.catalog .industries-logos ul { list-style: none; }
+.catalog .industries-logos li { display: inline-block; padding: 0 15px; }
+
+.catalog .benefits {
+  padding: 50px 0;
+}
+
+.catalog .benefits section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog .benefits .benefit {
+  width: 260px;
+}
+
+.catalog .benefit.middle {
+  margin: 0 50px;
+}
+
+.catalog .benefit .heading {
+  display: flex;
+}
+
+.catalog .benefit .heading h2 {
+  text-align: left;
+}
+
+.catalog .benefit .heading img {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.catalog .benefit .benefit-text {
+  padding-top: 25px;
 }
 
 .catalog .platforms { padding-top: 10px; }
@@ -91,7 +197,7 @@
 }
 
 .catalog .page.content { padding-top: 30px; }
-.catalog .main-headline .btn { margin-top: 20px; }
+.catalog .main-headline .btn { margin-top: 5px; }
 .share { height: 30px; margin-bottom: 20px; }
 .share > div { float: left !important; width: 74px !important; }
 .share > div.fb_iframe_widget { width: 100px !important; vertical-align: top; }

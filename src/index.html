@@ -40,28 +40,27 @@
         <div class="sharing-buttons">
           <ul class="social-share">
              <li>
-              <a href="https://twitter.com/intent/tweet?text={{ page.tweet }} {{ site.url }}{{ page.url }} via @fulcrumapp"
-              class="popup tweet">
+              <a href="https://twitter.com/" class="popup tweet">
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="popup fblike">
+              <a href="https://www.facebook.com/" class="popup fblike">
                 <i class="fa fa-facebook"></i>
               </a>
             </li>
              <li>
-              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}" class="popup lishare">
+              <a href="http://www.linkedin.com/" class="popup lishare">
                 <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://plus.google.com/share?url={{ page.title }} {{ site.url }}{{ page.url }}" class="popup plus">
+              <a href="https://plus.google.com/" class="popup plus">
                <i class="fa fa-google-plus"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ page.url }}" class="emailshare">
+              <a href="mailto:" class="emailshare">
                 <i class="fa fa-envelope"></i>
               </a>
             </li>
@@ -85,28 +84,34 @@
     </div>
 
   <!-- Benefits section -->
-    <div id="hp-benefits">
+    <div class="benefits">
       <section>
         <div class="benefit">
-          <img src="/assets/img/homepage/sign.png" title="Faster Decision Making" alt="Faster Decision Making" title="Faster Decision Making" />
-          <div class="feature-inner">
+          <div class="heading">
+            <img src="/assets/img/homepage/sign.png" title="Faster Decision Making" alt="Faster Decision Making" title="Faster Decision Making" />
             <h2>Faster Decision Making</h2>
+          </div>
+          <div class="benefit-text">
             <p>Real-time access to your data allows you to see what field teams are doing without waiting for the end of a workday. Faster access to your data means faster decision making.</p>
             <b><u><a href="/tour/deploy/">Learn About Deploying Fulcrum in the Field</a></u></b>
           </div>
         </div>
-        <div class="benefit">
-          <img src="/assets/img/homepage/calipers.png" title="More Accurate Data" alt="More Accurate Data" title="More Accurate Data" />
-          <div class="feature-inner">
+        <div class="benefit middle">
+          <div class="heading">
+            <img src="/assets/img/homepage/calipers.png" title="More Accurate Data" alt="More Accurate Data" title="More Accurate Data" />
             <h2>More Accurate Data</h2>
+          </div>
+          <div class="benefit-text">
             <p>Replace error-prone paper processes with Fulcrum forms, which have visibility, requirement, and validation logic built in, resulting in more consistent, accurate data.</p>
             <b><u><a href="/tour/collect/">Learn More About Fulcrum Data Collection</a></u></b>
           </div>
         </div>
         <div class="benefit">
-          <img src="/assets/img/homepage/gears.png" title="Automated Workflow" alt="Automated Workflow" title="Automated Workflow" />
-          <div class="feature-inner">
+          <div class="heading">
+            <img src="/assets/img/homepage/gears.png" title="Automated Workflow" alt="Automated Workflow" title="Automated Workflow" />
             <h2>Automated Workflows</h2>
+          </div>
+          <div class="benefit-text">
             <p>Using native Fulcrum features, you can create custom, automated workflows that help you manage stages of projects and keep team members updated on progress along the way.</p>
             <b><u><a href="/tour/extend/">See How You Can Extend Fulcrum To Do More</a></u></b>
           </div>
@@ -458,19 +463,3 @@
   </div>
 </body>
 </html>
-
-
-<!-- <ul>
-  <li>The Fulcrum server is cloud-based, and adheres to the policies of the Amazon Web Services standard agreement. For more information see aws.amazon.com/security.</li>
-  <li>All traffic to the Fulcrum server and API is forced to use 256-bit secure SSL.</li>
-  <li>Fulcrum is a Ruby on Rails web application.</li>
-  <li>Fulcrum’s mobile apps for iOS and Android are completely native, built using Objective-C and Java, respectively.</li>
-  <li>All server requests are handled by an nginx web server.</li>
-  <li>All persistent data is stored on a PostgreSQL database server, with PostGIS extensions for geospatial functions.</li>
-  <li>All user accounts in Fulcrum require strong passwords for authentication to the system.</li>
-  <li>Attachment data and maps uploaded to Fulcrum are stored on S3, a distributed, high-availability storage engine that grows along with your Fulcrum content.</li>
-  <li>Your data always remains private, and is not shared between accounts on the system, and all data within your account belongs to you.</li>
-  <li>All content stored on S3 has access control policies and permissions associated with it, locking down all content making it accessible only to your user account. As with the database, all associated files on S3 are stored redundantly across datacenter locations to mitigate data loss and increase availability and uptime.</li>
-  <li>Authentication to the API is accomplished via unique tokens associated with each account which can be reset at any time. This same API is used by our iOS and Android mobile applications.</li>
-  <li>Authentication uses standard challenge/response, with SHA1 password hashes stored in the PostgreSQL database.</li>
-</ul> -->
