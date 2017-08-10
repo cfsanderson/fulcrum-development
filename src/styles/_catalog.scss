@@ -1,3 +1,5 @@
+// @import 'grid';
+
 /* ========== Main Header ========== */
 
 .catalog .main-headline {
@@ -193,21 +195,110 @@
   }
 }
 
-/* ========== Customer Stories section ========== */
+/* ========== Customer Story section ========== */
+
 .catalog .app-customer-story {
   padding: 50px 0;
-  height: 500px;
+  // height: 500px;
+  margin-bottom: 25px;
 }
 
 .catalog .app-customer-story h2 { margin-bottom: 40px; }
+
 .catalog .app-customer-story section {
   display: flex;
   justify-content: space-around;
 }
 
-.catalog .app-customer-story .text { padding: 0 0 40px 0; }
+.catalog .app-customer-story .logo {
+  min-width: 150px;
+  max-width: 400px;
+  display: table-cell;
+  word-wrap: break-word;
+  word-break: break-all;
+}
 
-/* ==========  ========== */
+.catalog .app-customer-story .text { padding-left: 50px; }
+
+@media only all and (max-width: 480px) {
+  .catalog .app-customer-story section {
+    flex-direction: column;
+  }
+
+  .catalog .app-customer-story .text {
+    padding: 25px 0;
+  }
+}
+
+/* ========== Related Apps section ========== */
+
+.catalog #has-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog #has-grid .grid-item {
+  // margin: 1.5%;
+  vertical-align: top;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #fff;
+  flex: 1;
+}
+
+.catalog #has-grid .middle {
+  margin: 0 1.5%;
+}
+
+.catalog #has-grid .grid-item img {
+  height: 180px;
+  max-width: none;
+  margin: 0 -100% !important;
+}
+
+.catalog #has-grid .grid-item h3.title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #3a98c3;
+  margin: 10px 0 0;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.catalog #has-grid .grid-item .meta {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  padding: 0 20px;
+  color: #999;
+  margin: 10px 0;
+}
+
+@media (max-width: 978px) {
+  #has-grid .grid-item {
+    max-width: 400px;
+    // justify-content: center;
+    border: solid 2px goldenrod;
+  }
+}
+
+@media (max-width: 756px) {
+  .catalog #has-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog #has-grid .middle { margin: 1.5% 0; }
+}
+
+@media (max-width: 480px) {
+  #has-grid .grid-item { width: 100%; margin: 10px 0; min-height: 430px; }
+  #has-grid .grid-item img { height: 250px; }
+}
+
+/* ========== ???? ========== */
 
 .catalog .platforms { padding-top: 10px; }
 .catalog .platforms li { font-size: 14px; margin-right: 20px; }
