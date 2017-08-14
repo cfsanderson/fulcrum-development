@@ -1,5 +1,3 @@
-// @import 'grid';
-
 /* ========== Main Header ========== */
 
 .catalog .main-headline {
@@ -9,6 +7,7 @@
   height: 500px;
 }
 
+.catalog .main
 .catalog .main-headline .page {
   position: relative;
 }
@@ -55,6 +54,15 @@
   padding-top: 0;
   display: block;
 }
+
+
+/* ========== Header: Device Platforms ========== */
+
+.catalog .platforms { padding-top: 10px; }
+.catalog .platforms li { font-size: 14px; margin-right: 20px; }
+.catalog .platform img { height: 22px; vertical-align: bottom; display: inline-block; }
+
+/* ========== Header: CTAs ========== */
 
 .catalog .main-headline .cta-top a { white-space: nowrap; overflow: hidden; }
 .catalog .main-headline .cta-top a.tour { background-color: #fff; border: 1px solid #eee; }
@@ -232,6 +240,8 @@
 
 /* ========== Related Apps section ========== */
 
+.catalog #gallery h2 { margin-bottom: 40px; }
+
 .catalog #has-grid {
   display: flex;
   justify-content: space-around;
@@ -246,6 +256,7 @@
   min-height: 300px;
   background-color: #fff;
   flex: 1;
+  // margin: 0 auto;
 }
 
 .catalog #has-grid .middle {
@@ -278,9 +289,7 @@
 
 @media (max-width: 978px) {
   #has-grid .grid-item {
-    max-width: 400px;
-    // justify-content: center;
-    border: solid 2px goldenrod;
+    max-width: 380px;
   }
 }
 
@@ -290,7 +299,7 @@
     align-items: center;
   }
 
-  .catalog #has-grid .middle { margin: 1.5% 0; }
+  .catalog #has-grid .middle { margin: 10px 0; }
 }
 
 @media (max-width: 480px) {
@@ -298,41 +307,41 @@
   #has-grid .grid-item img { height: 250px; }
 }
 
-/* ========== ???? ========== */
-
-.catalog .platforms { padding-top: 10px; }
-.catalog .platforms li { font-size: 14px; margin-right: 20px; }
-.catalog .platform img { height: 22px; vertical-align: bottom; display: inline-block; }
-
-.catalog .cta-top a { white-space: nowrap; overflow: hidden; }
-.catalog .cta-top a.tour { background-color: #fff; border: 1px solid #eee; }
-
 /*=================  Original catalog styles below  =====================*/
 
 .catalog .app-left .detail ul { margin-bottom: 20px; }
-.catalog .app-left .detail li { font-size: 14px; list-style: outside disc; margin-left: 20px; margin-bottom: 5px; }
-.main-headline { padding-top: 0; padding-bottom: 0; }
+
+.catalog .app-left .detail li {
+  font-size: 14px;
+  list-style: outside disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.main-headline {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /* Original Category BG Colors */
-// .catalog .category-agriculture .main-headline { background:#8faf50; }
-// .catalog .category-archaeology .main-headline { background:#9e9c77; }
-// .catalog .category-commercial .main-headline { background:#ffa800; }
-// .catalog .category-construction .main-headline { background:#333; }
-// .catalog .category-disaster-response .main-headline { background:#b40000; }
-// .catalog .category-environmental .main-headline { background:#92a300; }
-// .catalog .category-finance .main-headline { background:#71b900; }
-// .catalog .category-government .main-headline { background:#603b14; }
-// .catalog .category-health .main-headline { background:#ff7171; }
-// .catalog .category-miscellaneous .main-headline { background:#31cda3; }
-// .catalog .category-natural-resources .main-headline { background:#29c2e3; }
-// .catalog .category-political .main-headline { background:#007ccb; }
-// .catalog .category-real-estate .main-headline { background:#005992; }
-// .catalog .category-safety .main-headline { background:#4d5b00; }
-// .catalog .category-tourism .main-headline { background:#d81688; }
-// .catalog .category-transportation .main-headline { background:#077851; }
-// .catalog .category-utilities .main-headline { background:#455a64; }
 
-/* New Category BG gradients */
+.catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #a8c76a); }
+.catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #b9b79b); }
+.catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffbb37); }
+.catalog .category-construction .main-headline { background: linear-gradient(to bottom right, #333, #4b4848); }
+.catalog .category-disaster-response .main-headline { background: linear-gradient(to bottom right, #b40000, #da2525); }
+.catalog .category-environmental .main-headline { background: linear-gradient(to bottom right, #92a300, #aabb16); }
+.catalog .category-finance .main-headline { background: linear-gradient(to bottom right, #71b900, #8ed125); }
+.catalog .category-government .main-headline { background: linear-gradient(to bottom right, #603b14, #825423); }
+.catalog .category-health .main-headline { background: linear-gradient(to bottom right, #ff7171, #f58c8c); }
+.catalog .category-miscellaneous .main-headline { background: linear-gradient(to bottom right, #31cda3, #47ddb4); }
+.catalog .category-natural-resources .main-headline { background: linear-gradient(to bottom right, #29c2e3, #6ed7ee); }
+.catalog .category-political .main-headline { background: linear-gradient(to bottom right, #007ccb, #1f94df); }
+.catalog .category-real-estate .main-headline { background: linear-gradient(to bottom right, #005992, #2b7aac); }
+.catalog .category-safety .main-headline { background: linear-gradient(to bottom right, #4d5b00, #778526); }
+.catalog .category-tourism .main-headline { background: linear-gradient(to bottom right, #d81688, #f447ac); }
+.catalog .category-transportation .main-headline { background: linear-gradient(to bottom right, #077851, #27956f); }
+.catalog .category-utilities .main-headline { background: linear-gradient(to bottom right, #455a64, #859095); }
 .catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #515454); }
 
 .page.cta {
