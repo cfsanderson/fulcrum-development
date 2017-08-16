@@ -1,5 +1,6 @@
-/* Updated Category BG Gradients */
+/* when converting to fulcrumapp.com change all "url(../assets" to "url(/assets" */
 
+/* Updated Category BG Gradients */
 .catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #a8c76a); }
 .catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #b9b79b); }
 .catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffbb37); }
@@ -19,32 +20,29 @@
 .catalog .category-utilities .main-headline { background: linear-gradient(to bottom right, #455a64, #859095); }
 .catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #515454); }
 
-/* ========== Main Header ========== */
+/* ========== header.main-headline ========== */
 
 .catalog .main-headline {
-  overflow: hidden;
   padding: 0;
   border-bottom: 1px solid #f2f2f2;
-  height: 450px;
+  min-height: 470px;
 }
 
-.catalog .main
 .catalog .main-headline .page {
-  position: relative;
+  display: flex;
 }
 
 .catalog .main-headline .text-left {
-  float: left;
   padding-top: 72px;
   text-align: left;
-  width: 50%;
+  flex: 1;
+  margin-bottom: 45px;
 }
 
 .catalog .main-headline .text-left span {
   color: #fff;
   font-size: 16px;
   font-weight: 200;
-  position: relative;
   text-transform: uppercase;
 }
 
@@ -54,80 +52,107 @@
   text-align: left;
 }
 
-.catalog .main-headline p {
+.catalog .main-headline .text-left > p {
   color: #fff;
   font-size: 18px;
   font-weight: 200;
-  text-align: left;
   line-height: 1.75em;
+  padding: 0 0 10px;
 }
 
-// .catalog .main-headline .btn { margin-top: 5px; }
-
-// .catalog .main-headline figure {
-//   border: 2px solid red;
-//   // max-width: 50%;
-//   // position: absolute;
-//   left: 50%;
-//   // top: -50px;
-//   background: url(/assets/img/apps/devices-03.png) contain;
-//   height: 500px;
-//   // margin-left: -40px;
-//   // width: 50%;
-//   // position: relative;
-// }
-
-// .catalog .main-headline figure img { height: 50%; width: 50%;}
 .catalog .main-headline figure {
-  // float: right;
-  // border: 2px solid red;
-  // width: 33%;
-  // margin-right: -61px;
-  position: absolute;
-  top: -80px;
-  right: -129px;
+  // position: relative;
+  flex: 0.51;
+}
+
+.catalog .main-headline img.header-device {
+  pointer-events: none;
   overflow: hidden;
-  object-fit: contain;
-  object-position: 50% 50%; /* default value: image is centered*/
-  object-position: 0 0;
 }
 
-/* ========== Header: Device Platforms ========== */
+/* ========== .main-headline: Device Platforms ========== */
 
-.catalog .platforms { padding-top: 10px; }
-.catalog .platforms li { font-size: 14px; margin-right: 20px; }
-.catalog .platform img { height: 22px; vertical-align: bottom; display: inline-block; }
-
-/* ========== Header: CTAs ========== */
-
-
-.catalog .main-headline .cta-top { padding-top: 10px; }
-.catalog .main-headline .cta-top a { white-space: nowrap; overflow: hidden; }
-.catalog .main-headline .cta-top a.tour { background-color: #fff; border: 1px solid #eee; }
-
-/* ========== Social Sharing Buttons in Header ========== */
-
-// .catalog .main-headline .sharing-container { position: relative; }
-
-.catalog .main-headline .sharing-buttons {
-  width: 250px;
-  position: absolute;
-  top: 40%;
-  right: 40%;
-  // top: 475px;
-  // right: 346px;
+.catalog .main-headline .platforms {
+  display: flex;
 }
 
-.catalog .main-headline .sharing-buttons ul {
+.catalog .platform {
+  display: flex;
+}
+
+.catalog .platforms p {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.catalog .platform img {
+  height: 22px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+/* ========== .main-headline: CTAs ========== */
+
+.catalog .main-headline .cta-top {
+  display: flex;
+  flex-wrap: wrap;
+  // padding-top: 10px;
+}
+
+.catalog .main-headline .cta-top a {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 5px 5px 0 0;
+}
+
+.catalog .main-headline .cta-top a.tour {
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+/* ========== .main-headline: media queries ========== */
+
+@media (max-width: 978px) {
+}
+
+@media (max-width: 756px) {
+  .catalog .main-headline figure { display: none; }
+  .catalog .main-headline .text-left > * { text-align: center; }
+  .catalog .main-headline .cta-top { flex-direction: column; }
+  .catalog .main-headline .text-left {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+}
+
+
+/* ========== Social Sharing Buttons below .main-headline ========== */
+
+
+.catalog .sharing-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog .sharing-buttons ul {
   margin: 0;
   font-size: 14px;
   text-align: center;
   list-style: none;
   padding: 0;
-  z-index: 10;
+  position: absolute;
+  width: 250px;
+  margin-top: -25px;
+  align-self: center;
 }
 
-.catalog .main-headline .sharing-buttons li {
+.catalog .sharing-buttons li {
   display: list-item;
   float: left;
   width: 20%;
@@ -136,7 +161,7 @@
   line-height: 1.35em;
 }
 
-.catalog .main-headline .sharing-buttons li a {
+.catalog .sharing-buttons li a {
   text-decoration: none;
   display: inline-block;
   font-size: 11px;
@@ -150,7 +175,7 @@
   width: 100%;
 }
 
-.catalog .main-headline .sharing-buttons i {
+.catalog .sharing-buttons i {
   color: #fff;
   font-size: 20px;
   display: inline-block;
@@ -158,11 +183,11 @@
   padding: 0;
 }
 
-.catalog .main-headline .social-share .tweet { background: #26c4f1; }
-.catalog .main-headline .social-share .fblike { background: #306199; }
-.catalog .main-headline .social-share .lishare { background: #007bb6; }
-.catalog .main-headline .social-share .plus { background: #e93f2e; }
-.catalog .main-headline .social-share .emailshare { background: #777; }
+.catalog .social-share .tweet { background: #26c4f1; }
+.catalog .social-share .fblike { background: #306199; }
+.catalog .social-share .lishare { background: #007bb6; }
+.catalog .social-share .plus { background: #e93f2e; }
+.catalog .social-share .emailshare { background: #777; }
 
 /* ========== Industry Logos ========== */
 
@@ -184,15 +209,16 @@
 
 .catalog .all-benefits section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.catalog .all-benefits .benefit {
-  width: 260px;
+.catalog .all-benefits .benefit.middle {
+  // width: 260px;
+  margin: 0 35px;
 }
 
-.catalog .benefit.middle {
-  margin: 0 50px;
+.catalog .benefit{
+  // margin: 0 50px;
 }
 
 .catalog .benefit .heading {
@@ -212,6 +238,29 @@
 
 .catalog .benefit .benefit-text {
   padding-top: 25px;
+}
+
+@media (max-width: 978px) {
+  .catalog .all-benefits .heading {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog .all-benefits .heading h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 756px) {
+  .catalog .all-benefits section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
 }
 
 /* ========== Features ========== */
@@ -279,7 +328,7 @@
 
 /* ========== Related Apps section ========== */
 
-.catalog #gallery h2 { margin-bottom: 40px; }
+.catalog .related-apps h2 { margin-bottom: 40px; }
 
 .catalog #has-grid {
   display: flex;
@@ -473,9 +522,9 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
     width: auto;
   }
 
-  #gallery .platforms li { color: #fff; display: inline-block; margin: 10px auto; }
+  // #gallery .platforms li { color: #fff; display: inline-block; margin: 10px auto; }
 
-  .catalog .page { padding: 0; width: 320px; }
+  .catalog .page { padding: 0; }
   .app-left { padding: 0 20px; width: 280px; }
   .app-right { margin-top: 40px; width: 320px; }
   .app-right .app-example {
@@ -498,7 +547,7 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
 @media (min-width: 480px) {
   #gallery .platforms li { margin-right: 20px; }
 
-  .catalog .page { padding: 0 20px; width: 440px; }
+  .catalog .page { padding: 0 20px; }
   .app-left { padding: 0 20px; width: 400px; }
   .app-right { margin-top: 40px; width: 370px; }
 
