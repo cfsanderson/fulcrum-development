@@ -1,24 +1,24 @@
 /* when converting to fulcrumapp.com change all "url(../assets" to "url(/assets" */
 
 // Updated Category BG Gradients
-.catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #a8c76a); }
-.catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #b9b79b); }
-.catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffbb37); }
-.catalog .category-construction .main-headline { background: linear-gradient(to bottom right, #333, #4b4848); }
-.catalog .category-disaster-response .main-headline { background: linear-gradient(to bottom right, #b40000, #da2525); }
-.catalog .category-environmental .main-headline { background: linear-gradient(to bottom right, #92a300, #aabb16); }
-.catalog .category-finance .main-headline { background: linear-gradient(to bottom right, #71b900, #8ed125); }
-.catalog .category-government .main-headline { background: linear-gradient(to bottom right, #603b14, #825423); }
-.catalog .category-health .main-headline { background: linear-gradient(to bottom right, #ff7171, #f58c8c); }
-.catalog .category-miscellaneous .main-headline { background: linear-gradient(to bottom right, #31cda3, #47ddb4); }
-.catalog .category-natural-resources .main-headline { background: linear-gradient(to bottom right, #29c2e3, #6ed7ee); }
-.catalog .category-political .main-headline { background: linear-gradient(to bottom right, #007ccb, #1f94df); }
+.catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #b4d07e); }
+.catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #c4c2a8); }
+.catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffcf73); }
+.catalog .category-construction .main-headline { background: linear-gradient(to bottom right, #333, #666161); }
+.catalog .category-disaster-response .main-headline { background: linear-gradient(to bottom right, #b40000, #f04848); }
+.catalog .category-environmental .main-headline { background: linear-gradient(to bottom right, #92a300, #b7c826); }
+.catalog .category-finance .main-headline { background: linear-gradient(to bottom right, #71b900, #9dd545); }
+.catalog .category-government .main-headline { background: linear-gradient(to bottom right, #603b14, #93602a); }
+.catalog .category-health .main-headline { background: linear-gradient(to bottom right, #ff7171, #f59898); }
+.catalog .category-miscellaneous .main-headline { background: linear-gradient(to bottom right, #31cda3, #63e8c4); }
+.catalog .category-natural-resources .main-headline { background: linear-gradient(to bottom right, #29c2e3, #88def1); }
+.catalog .category-political .main-headline { background: linear-gradient(to bottom right, #007ccb, #2da0eb); }
 .catalog .category-real-estate .main-headline { background: linear-gradient(to bottom right, #005992, #2b7aac); }
-.catalog .category-safety .main-headline { background: linear-gradient(to bottom right, #4d5b00, #778526); }
-.catalog .category-tourism .main-headline { background: linear-gradient(to bottom right, #d81688, #f447ac); }
-.catalog .category-transportation .main-headline { background: linear-gradient(to bottom right, #077851, #27956f); }
-.catalog .category-utilities .main-headline { background: linear-gradient(to bottom right, #455a64, #859095); }
-.catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #515454); }
+.catalog .category-safety .main-headline { background: linear-gradient(to bottom right, #4d5b00, #7e8c2e); }
+.catalog .category-tourism .main-headline { background: linear-gradient(to bottom right, #d81688, #f762b9); }
+.catalog .category-transportation .main-headline { background: linear-gradient(to bottom right, #077851, #329a76); }
+.catalog .category-utilities .main-headline { background: linear-gradient(to bottom right, #455a64, #909ea4); }
+.catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #5f6363); }
 
 /* ========== header.main-headline ========== */
 
@@ -26,6 +26,7 @@
   padding: 0;
   border-bottom: 1px solid #f2f2f2;
   min-height: 470px;
+  position: relative;
 }
 
 .catalog .main-headline .page {
@@ -33,10 +34,10 @@
 }
 
 .catalog .main-headline .text-left {
-  padding-top: 72px;
+  padding: 72px 0;
   text-align: left;
   flex: 1;
-  margin-bottom: 45px;
+  max-width: 60%;
 }
 
 .catalog .main-headline .text-left span {
@@ -60,14 +61,13 @@
   padding: 0 0 10px;
 }
 
-.catalog .main-headline figure {
-  // position: relative;
-  flex: 0.51;
-}
-
-.catalog .main-headline img.header-device {
-  pointer-events: none;
-  overflow: hidden;
+.catalog #app-illustration {
+  position: absolute;
+  left: 58%;
+  top: -102px;
+  width: 625px;
+  height: 625px;
+  background: url(../assets/img/apps/devices-03.png) center / cover no-repeat;
 }
 
 /* ========== .main-headline: Device Platforms ========== */
@@ -80,7 +80,6 @@
 
 .catalog .platform {
   display: flex;
-
 }
 
 .catalog .platforms p {
@@ -124,18 +123,40 @@
 
 /* ========== .main-headline: media queries ========== */
 
+@media (max-width: 978px) {
+  .catalog #app-illustration {
+    left: 58%;
+    top: -100px;
+    width: 692px;
+    height: 692px;
+  }
+}
+
 @media (max-width: 756px) {
-  .catalog .main-headline figure { display: none; }
+  .catalog #app-illustration { display: none; }
   .catalog .main-headline .text-left > * { text-align: center; }
   .catalog .main-headline .cta-top { flex-direction: column; }
   .catalog .main-headline .text-left {
     display: flex;
     flex-direction: column;
-    padding: 45px 0 30px;
+    padding: 50px 0;
+    max-width: 100%;
   }
 
   .catalog .main-headline .cta-top a {
     margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog .main-headline .platforms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog .main-headline .cta-top a {
+    white-space: normal;
+    line-height: 20px;
   }
 }
 
@@ -195,9 +216,29 @@
 .catalog .social-share .plus { background: #e93f2e; }
 .catalog .social-share .emailshare { background: #777; }
 
+@media (max-width: 756px) {
+  .catalog .sharing-buttons ul {
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog .sharing-buttons ul {
+    margin-top: -24px;
+  }
+}
+
 /* ========== Industry Logos ========== */
 
-.catalog .industries-logos { background: #f1f1f1; padding: 10px; height: 100px; text-align: center; overflow: hidden; }
+.catalog .industries-logos {
+  background: #f1f1f1;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
 .catalog .industries-logos ul li { display: inline-block; padding: 0 15px; }
 .catalog .industries-logos img { height: 80px; }
 
@@ -604,15 +645,19 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
   .catalog .app-left .detail-top .cta-top a {  display: flex; justify-content: center; }
 
   .catalog .app-left .image {
-    float: none;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    background: url(../assets/img/app-gallery/stormwater-pollution-prevention.jpg) center / cover no-repeat
   }
+  // .catalog .app-left .image {
+  //   float: none;
+  //   padding: 20px;
+  //   margin: auto;
+  //   display: flex;
+  //   justify-content: center;
+  // }
 
-  .catalog .app-left .image img { width: 200px; align-self: center;}
-
+  // .catalog .app-left .image img { width: 200px; align-self: center;}
+  .catalog .app-left .image img { display: none; }
   .catalog .app-left .tags {
     margin: auto;
     display: flex;
