@@ -1,4 +1,7 @@
-/* when converting to fulcrumapp.com change all "url(../assets" to "url(/assets" */
+/* when converting to fulcrumapp.com change all "url(../assets" to "url(..../assets" */
+/* when converting from fulcrum-development change all "url(../assets" to "url(../assets" */
+.catalog .content { padding-bottom: 50px; }
+
 
 // Updated Category BG Gradients
 .catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #b4d07e); }
@@ -34,7 +37,7 @@
 }
 
 .catalog .main-headline .text-left {
-  padding: 72px 0;
+  padding: 72px 0 92px;
   text-align: left;
   flex: 1;
   max-width: 60%;
@@ -64,9 +67,9 @@
 .catalog #app-illustration {
   position: absolute;
   left: 58%;
-  top: -102px;
-  width: 625px;
-  height: 625px;
+  bottom: 30px;
+  width: 640px;
+  height: 640px;
   background: url(../assets/img/apps/devices-03.png) center / cover no-repeat;
 }
 
@@ -127,8 +130,8 @@
   .catalog #app-illustration {
     left: 58%;
     top: -100px;
-    width: 692px;
-    height: 692px;
+    width: 735px;
+    height: 735px;
   }
 }
 
@@ -368,34 +371,51 @@
 
 /* ========== Customer Story section ========== */
 
-.catalog .app-customer-story {
+.catalog .customer-stories {
   padding: 50px 0;
   margin-bottom: 25px;
 }
 
-.catalog .app-customer-story h2 { margin-bottom: 40px; }
+.catalog .customer-stories h2 { margin-bottom: 40px; }
 
-.catalog .app-customer-story section {
+.catalog .customer-stories section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.catalog .app-customer-story .logo {
-  min-width: 150px;
-  max-width: 400px;
-  display: table-cell;
-  word-wrap: break-word;
-  word-break: break-all;
+.catalog .customer-stories .meta {
+  background-color: #f5f5f5;
+  padding: 25px;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.catalog .app-customer-story .text { padding-left: 50px; }
+.catalog .customer-stories .customer-logo {
+  background-color: #fff;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog .customer-stories .grid-item {
+  // margin: 0 25px;
+}
+
+.catalog .customer-stories .customer-logo img {
+  max-width: 300px;
+}
+
+// .catalog .customer-stories .text { padding-left: 50px; }
 
 @media only all and (max-width: 480px) {
-  .catalog .app-customer-story section {
+  .catalog .customer-stories section {
     flex-direction: column;
   }
 
-  .catalog .app-customer-story .text {
+  .catalog .customer-stories .text {
     padding: 25px 0;
   }
 }
@@ -406,7 +426,7 @@
 
 .catalog #has-grid {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
 }
 
 .catalog #has-grid .grid-item {
@@ -423,7 +443,7 @@
   margin: 0 1.5%;
 }
 
-.catalog #has-grid .grid-item img {
+.catalog .related-apps #has-grid .grid-item img {
   height: 180px;
   max-width: none;
   margin: 0 -100% !important;
@@ -468,6 +488,9 @@
 }
 
 /*========== app-section ==========*/
+.catalog .app-gradient {
+  background: linear-gradient(0deg, #fff, #eef7f9);
+}
 
 .catalog .app-section {
   display: flex;
@@ -554,11 +577,7 @@
 
 .app-clear { clear: both; }
 
-#gallery .app-fields p.section,
-#galle
-og .catalog .app-left { width: 500px; }
-// .catalog ry pp-field.label span.app-field-icon { background-image: url(/assets/img/app-fields/label.png); }.app-fields p.repeat
-able {
+#gallery .app-fields p.section, #gallery .app-fields p.repeatable {
   font-size: 14pt;
   background-color: #eaeaea;
   text-align: left;
@@ -585,23 +604,23 @@ p.app-field span.app-field-icon {
   background-repeat: no-repeat;
 }
 
-p.app-field.label span.app-field-icon               { background-image: url(/assets/img/app-fields/label.png); }
-p.app-field.textfield span.app-field-icon           { background-image: url(/assets/img/app-fields/text_field.png); }
-p.app-field.photofield span.app-field-icon          { background-image: url(/assets/img/app-fields/photo_field.png); }
-p.app-field.numericfield span.app-field-icon        { background-image: url(/assets/img/app-fields/numeric_field.png); }
-p.app-field.choicefield span.app-field-icon         { background-image: url(/assets/img/app-fields/choice_field.png); }
-p.app-field.multichoicefield span.app-field-icon    { background-image: url(/assets/img/app-fields/multi_choice_field.png); }
-p.app-field.datetimefield span.app-field-icon       { background-image: url(/assets/img/app-fields/date_field.png); }
-p.app-field.classificationfield span.app-field-icon { background-image: url(/assets/img/app-fields/classification_field.png); }
-p.app-field.addressfield span.app-field-icon        { background-image: url(/assets/img/app-fields/address_field.png); }
-p.app-field.signaturefield span.app-field-icon      { background-image: url(/assets/img/app-fields/signature_field.png); }
-p.app-field.repeatable span.app-field-icon          { background-image: url(/assets/img/app-fields/repeatable_field.png); }
-p.app-field.yesnofield span.app-field-icon          { background-image: url(/assets/img/app-fields/yes_no_field.png); }
-p.app-field.timefield span.app-field-icon           { background-image: url(/assets/img/app-fields/time_field.png); }
-p.app-field.videofield span.app-field-icon          { background-image: url(/assets/img/app-fields/video_field.png); }
-p.app-field.calculatedfield span.app-field-icon     { background-image: url(/assets/img/app-fields/calculated_field.png); }
-p.app-field.barcodefield span.app-field-icon        { background-image: url(/assets/img/app-fields/barcode_field.png); }
-p.app-field.audiofield span.app-field-icon          { background-image: url(/assets/img/app-fields/audio_field.png); }
+p.app-field.label span.app-field-icon               { background-image: url(../assets/img/app-fields/label.png); }
+p.app-field.textfield span.app-field-icon           { background-image: url(../assets/img/app-fields/text_field.png); }
+p.app-field.photofield span.app-field-icon          { background-image: url(../assets/img/app-fields/photo_field.png); }
+p.app-field.numericfield span.app-field-icon        { background-image: url(../assets/img/app-fields/numeric_field.png); }
+p.app-field.choicefield span.app-field-icon         { background-image: url(../assets/img/app-fields/choice_field.png); }
+p.app-field.multichoicefield span.app-field-icon    { background-image: url(../assets/img/app-fields/multi_choice_field.png); }
+p.app-field.datetimefield span.app-field-icon       { background-image: url(../assets/img/app-fields/date_field.png); }
+p.app-field.classificationfield span.app-field-icon { background-image: url(../assets/img/app-fields/classification_field.png); }
+p.app-field.addressfield span.app-field-icon        { background-image: url(../assets/img/app-fields/address_field.png); }
+p.app-field.signaturefield span.app-field-icon      { background-image: url(../assets/img/app-fields/signature_field.png); }
+p.app-field.repeatable span.app-field-icon          { background-image: url(../assets/img/app-fields/repeatable_field.png); }
+p.app-field.yesnofield span.app-field-icon          { background-image: url(../assets/img/app-fields/yes_no_field.png); }
+p.app-field.timefield span.app-field-icon           { background-image: url(../assets/img/app-fields/time_field.png); }
+p.app-field.videofield span.app-field-icon          { background-image: url(../assets/img/app-fields/video_field.png); }
+p.app-field.calculatedfield span.app-field-icon     { background-image: url(../assets/img/app-fields/calculated_field.png); }
+p.app-field.barcodefield span.app-field-icon        { background-image: url(../assets/img/app-fields/barcode_field.png); }
+p.app-field.audiofield span.app-field-icon          { background-image: url(../assets/img/app-fields/audio_field.png); }
 
 p.app-field { cursor: pointer; }
 p.app-field span { background-size: contain; height: 30px; width: 30px; }
@@ -648,13 +667,13 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
     width: 100%;
     background: url(../assets/img/app-gallery/stormwater-pollution-prevention.jpg) center / cover no-repeat
   }
-  // .catalog .app-left .image {
+/*  // .catalog .app-left .image {
   //   float: none;
   //   padding: 20px;
   //   margin: auto;
   //   display: flex;
   //   justify-content: center;
-  // }
+  // }*/
 
   // .catalog .app-left .image img { width: 200px; align-self: center;}
   .catalog .app-left .image img { display: none; }
