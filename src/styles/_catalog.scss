@@ -2,7 +2,6 @@
 /* when converting from fulcrum-development change all "url(../assets" to "url(../assets" */
 .catalog .content { padding-bottom: 50px; }
 
-
 // Updated Category BG Gradients
 .catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #b4d07e); }
 .catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #c4c2a8); }
@@ -378,9 +377,33 @@
 
 .catalog .customer-stories h2 { margin-bottom: 40px; }
 
-.catalog .customer-stories section {
+.catalog .customer-stories .meta p {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  padding: 0 20px;
+  color: #999;
+  margin: 10px 0 0;
+}
+
+.catalog .customer-stories .meta h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #3a98c3;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.catalog .customer-stories .has-grid-inner {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.catalog .customer-stories .grid-item {
+  width: 48%;
+  overflow: hidden;
 }
 
 .catalog .customer-stories .meta {
@@ -400,20 +423,38 @@
   align-items: center;
 }
 
-.catalog .customer-stories .grid-item {
-  // margin: 0 25px;
-}
-
 .catalog .customer-stories .customer-logo img {
   max-width: 300px;
 }
 
-// .catalog .customer-stories .text { padding-left: 50px; }
+@media only all and (max-width: 756px) {
+
+  .catalog .customer-stories .has-grid-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .catalog .customer-stories .grid-item {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 25px;
+  }
+
+  .catalog .customer-stories .customer-logo {
+    height: 130px;
+  }
+
+  .catalog .customer-stories .customer-logo img {
+    max-height: 100px;
+    max-width: 200px;
+  }
+}
 
 @media only all and (max-width: 480px) {
-  .catalog .customer-stories section {
-    flex-direction: column;
-  }
+  // .catalog .customer-stories section {
+  //   flex-direction: column;
+  // }
 
   .catalog .customer-stories .text {
     padding: 25px 0;
@@ -422,11 +463,12 @@
 
 /* ========== Related Apps section ========== */
 
+.catalog .related-apps { padding: 45px 0 0; }
 .catalog .related-apps h2 { margin-bottom: 40px; }
 
 .catalog #has-grid {
   display: flex;
-  // justify-content: space-around;
+  justify-content: space-around;
 }
 
 .catalog #has-grid .grid-item {
@@ -436,7 +478,7 @@
   align-items: center;
   min-height: 300px;
   background-color: #fff;
-  flex: 1;
+  width: 48%;
 }
 
 .catalog #has-grid .middle {
@@ -479,6 +521,10 @@
     align-items: center;
   }
 
+  .catalog #has-grid .grid-item {
+    width: 100%;
+  }
+
   .catalog #has-grid .middle { margin: 10px 0; }
 }
 
@@ -505,22 +551,17 @@
   width: 500px;
 }
 
-.app-left h2 { text-align: left; padding: 0 0 15px; }
-
-.app-left .image {
-  float: left;
-  margin-right: 25px;
-}
+.app-left h2 { text-align: left; }
 
 .app-left .image img {
-  width: 200px;
+  margin: 25px 0;
   border-radius: 2px;
 }
 
-.app-left .detail { padding: 0 0 20px; }
-.app-left .detail-top p { padding-bottom: 15px; }
-.app-left .detail-top { padding-bottom: 25px; }
-.app-left .detail p { text-align: left; }
+.app-left .detail p {
+  text-align: left;
+}
+
 .app-left ul.tags {
   text-align: left;
   margin-left: 4px;
@@ -647,9 +688,6 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
 
 @media (max-width: 978px) {
   .app-left { padding: 0 25px 0 0; width: 400px; margin-right: 35px;}
-  .app-left .image img {
-    width: 125px;
-  }
 }
 
 @media (max-width: 756px) {
@@ -659,29 +697,21 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
     flex-direction: column;
   }
 
+  .catalog .app-left h2 { padding-bottom: 25px; }
   .catalog .app-left { padding: 0; width: auto; margin: auto; }
   .catalog .app-left .detail-top > * { text-align: center; }
   .catalog .app-left .detail-top .cta-top a {  display: flex; justify-content: center; }
 
-  .catalog .app-left .image {
-    width: 100%;
-    background: url(../assets/img/app-gallery/stormwater-pollution-prevention.jpg) center / cover no-repeat
+  .catalog .app-left .image img {
+    display: none;
   }
-/*  // .catalog .app-left .image {
-  //   float: none;
-  //   padding: 20px;
-  //   margin: auto;
-  //   display: flex;
-  //   justify-content: center;
-  // }*/
 
-  // .catalog .app-left .image img { width: 200px; align-self: center;}
-  .catalog .app-left .image img { display: none; }
   .catalog .app-left .tags {
     margin: auto;
-    display: flex;
     justify-content: center;
     flex-direction: row;
+    text-align: center;
+    padding-bottom: 35px;
   }
 
   .catalog .app-section {
