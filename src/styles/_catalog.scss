@@ -1,17 +1,19 @@
-/* when converting to fulcrumapp.com change all "url(../assets" to "url(..../assets" */
-/* when converting from fulcrum-development change all "url(../assets" to "url(../assets" */
 .catalog .content { padding-bottom: 50px; }
 
-// Updated Category BG Gradients
+/* Updated Category BG Gradients */
 .catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #b4d07e); }
 .catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #c4c2a8); }
 .catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffcf73); }
 .catalog .category-construction .main-headline { background: linear-gradient(to bottom right, #333, #666161); }
+.catalog .category-cultural .main-headline { background: linear-gradient(to bottom right, #b4640f, #cb853c); }
 .catalog .category-disaster-response .main-headline { background: linear-gradient(to bottom right, #b40000, #f04848); }
+.catalog .category-engineering .main-headline { background: linear-gradient(to bottom right, #184167, #557593); }
 .catalog .category-environmental .main-headline { background: linear-gradient(to bottom right, #92a300, #b7c826); }
 .catalog .category-finance .main-headline { background: linear-gradient(to bottom right, #71b900, #9dd545); }
 .catalog .category-government .main-headline { background: linear-gradient(to bottom right, #603b14, #93602a); }
 .catalog .category-health .main-headline { background: linear-gradient(to bottom right, #ff7171, #f59898); }
+.catalog .category-public-health .main-headline { background: linear-gradient(to bottom right, #ff7171, #f59898); }
+.catalog .category-hospitality .main-headline { background: linear-gradient(to bottom right, #00a8a8, #5ac9c9); }
 .catalog .category-miscellaneous .main-headline { background: linear-gradient(to bottom right, #31cda3, #63e8c4); }
 .catalog .category-natural-resources .main-headline { background: linear-gradient(to bottom right, #29c2e3, #88def1); }
 .catalog .category-political .main-headline { background: linear-gradient(to bottom right, #007ccb, #2da0eb); }
@@ -53,6 +55,7 @@
   color: #fff;
   font-size: 2em;
   text-align: left;
+  padding: 10px 0 15px;
 }
 
 .catalog .main-headline .text-left > p {
@@ -60,15 +63,16 @@
   font-size: 18px;
   font-weight: 200;
   line-height: 1.75em;
-  padding: 0 0 10px;
+  padding: 0 0 25px;
+  margin: 0;
 }
 
 .catalog #app-illustration {
   position: absolute;
   left: 58%;
   bottom: 30px;
-  width: 640px;
-  height: 640px;
+  width: 690px;
+  height: 690px;
   background: url(../assets/img/apps/devices-03.png) center / cover no-repeat;
 }
 
@@ -76,7 +80,8 @@
 
 .catalog .main-headline .platforms {
   display: flex;
-  margin: 0 auto;
+  // margin: 0 0 25px;
+  padding: 0 0 10px;
   width: auto;
 }
 
@@ -377,22 +382,26 @@
 
 .catalog .customer-stories h2 { margin-bottom: 40px; }
 
+.catalog .customer-stories .has-grid-inner .meta {
+  padding: 20px 45px;
+}
+
 .catalog .customer-stories .meta p {
   font-size: inherit;
   line-height: inherit;
   text-align: left;
-  padding: 0 20px;
   color: #999;
   margin: 10px 0 0;
 }
 
-.catalog .customer-stories .meta h3 {
+.catalog .customer-stories .meta a {
   font-size: 20px;
   line-height: 24px;
   color: #3a98c3;
   margin: 10px 0;
-  padding: 0 20px;
   text-align: left;
+  font-family: "Open Sans Condensed", helvetica, arial, sans-serif;
+  font-weight: 900;
 }
 
 .catalog .customer-stories .has-grid-inner {
@@ -463,7 +472,7 @@
 
 /* ========== Related Apps section ========== */
 
-.catalog .related-apps { padding: 45px 0 0; }
+.catalog .related-apps { padding: 50px 0 0; }
 .catalog .related-apps h2 { margin-bottom: 40px; }
 
 .catalog #has-grid {
@@ -545,7 +554,7 @@
 
 /*========== App Left ==========*/
 
-.catalog .page.content { padding-top: 45px; }
+.catalog .page.content { padding-top: 50px; }
 
 .app-left {
   width: 500px;
