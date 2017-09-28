@@ -1,7 +1,12 @@
 .catalog .content { padding-bottom: 50px; }
+$gradient-water: linear-gradient(to bottom right, #353535, #5f6363);
+$solid-water: #353535;
+$gradient-agriculture: linear-gradient(to bottom right, #8faf50, #b4d07e);
+$solid-agriculture: #8faf50;
+
 
 /* Updated Category BG Gradients */
-.catalog .category-agriculture .main-headline { background: linear-gradient(to bottom right, #8faf50, #b4d07e); }
+.catalog .category-agriculture .main-headline { background: $gradient-agriculture; }
 .catalog .category-archaeology .main-headline { background: linear-gradient(to bottom right, #9e9c77, #c4c2a8); }
 .catalog .category-commercial .main-headline { background: linear-gradient(to bottom right, #ffa800, #ffcf73); }
 .catalog .category-construction .main-headline { background: linear-gradient(to bottom right, #333, #666161); }
@@ -22,7 +27,8 @@
 .catalog .category-tourism .main-headline { background: linear-gradient(to bottom right, #d81688, #f762b9); }
 .catalog .category-transportation .main-headline { background: linear-gradient(to bottom right, #077851, #329a76); }
 .catalog .category-utilities .main-headline { background: linear-gradient(to bottom right, #455a64, #909ea4); }
-.catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #5f6363); }
+// .catalog .category-water .main-headline { background: linear-gradient(to bottom right, #353535, #5f6363); }
+.catalog .category-water .main-headline { background: $gradient-water; }
 
 /* ========== header.main-headline ========== */
 
@@ -112,6 +118,7 @@
 }
 /* ========== .main-headline: CTAs ========== */
 
+
 .catalog .main-headline .cta-top {
   display: flex;
   flex-wrap: wrap;
@@ -121,13 +128,25 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 5px 5px 0 0;
+  border: 2px solid #eee;
+  border-radius: 2px;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #eee;
+  font-weight: 400;
 }
 
-.catalog .main-headline .cta-top a.tour {
-  background-color: #fff;
-  border: 1px solid #eee;
+.catalog .main-headline .cta-top a:hover {
+  background: rgba(238, 238, 238, 0.75);
+  border: 2px solid rgba(238, 238, 238, 0.75);
+  color: $solid-agriculture;
 }
 
+.catalog .main-headline .cta-top a:active {
+  background: rgba(238, 238, 238, 1);
+  border: 2px solid rgba(238, 238, 238, 1);
+  color: darken($solid-agriculture, 25);
+}
 /* ========== .main-headline: media queries ========== */
 
 @media (max-width: 978px) {
@@ -745,4 +764,33 @@ p.app-field span { background-size: contain; height: 30px; width: 30px; }
     height: 361px;
     width: 222px;
   }
+}
+
+.catalog .app-video {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog .app-video iframe.main {
+  width: 900px;
+  height: 506px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 978px) {
+  .catalog .app-video { width: 720px; }
+}
+
+@media (max-width: 756px) {
+  .catalog .app-video iframe.main {
+    width: 480px;
+    height: 270px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  // .catalog .app-video iframe.main { width: 320px; height: 180px; }
 }
